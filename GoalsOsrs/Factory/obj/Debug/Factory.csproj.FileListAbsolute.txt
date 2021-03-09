@@ -1,0 +1,17 @@
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\DatabaseOsrs.mdf
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\DatabaseOsrs_log.ldf
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Factory.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Factory.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Dal.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Interfaces.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Exceptions.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Dal.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Interfaces.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\Exceptions.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\obj\Debug\Factory.csprojAssemblyReference.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\obj\Debug\Factory.csproj.CopyComplete
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\obj\Debug\Factory.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\obj\Debug\Factory.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Factory\bin\Debug\System.Data.SqlClient.xml

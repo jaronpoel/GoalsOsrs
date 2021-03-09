@@ -1,0 +1,54 @@
+﻿using Dal.Context;
+using Factory;
+using Interfaces.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Logic
+{
+    public class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+
+        public User(int id, string name, string password, string email)
+        {
+            Id = id;
+            Name = name;
+            Password = password;
+            Email = email;
+        }
+
+        public User(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+
+        //Factory aanroepen
+        private readonly IUser UserDAL;
+        public User()
+        {
+            UserDAL = FactoryDal.CreateUserDal();
+        }
+
+        //Begin van de Methodes aanroepen
+
+        public User SignIn(string email, string password)
+        {
+            UserDTO userdto = UserDAL.SignIn(email, password);
+            User user = new User(userdto.Id, userdto.Name);
+            return user;
+        }
+
+        public User UpdateUser()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

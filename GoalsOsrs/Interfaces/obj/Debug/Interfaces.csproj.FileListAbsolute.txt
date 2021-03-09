@@ -1,0 +1,9 @@
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete

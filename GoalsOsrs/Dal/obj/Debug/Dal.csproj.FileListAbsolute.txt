@@ -1,0 +1,15 @@
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\DatabaseOsrs.mdf
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\DatabaseOsrs_log.ldf
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\Dal.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\Dal.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\Exceptions.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\Interfaces.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\Exceptions.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\Interfaces.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\obj\Debug\Dal.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\obj\Debug\Dal.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\bin\Debug\System.Data.SqlClient.xml
