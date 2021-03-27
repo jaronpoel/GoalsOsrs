@@ -48,5 +48,13 @@ namespace GoalsOsrs.Controllers
                 return View();
             }
         }
+
+        [HttpGet]
+        public IActionResult SignOut()
+        {
+            HttpContext.Session.SetString("name", string.Empty);
+            HttpContext.Session.SetInt32("userid", 0);
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

@@ -59,25 +59,6 @@ button.accept-policy {
   line-height: inherit;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-}
-
 /* Zelf------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Home -----------------------------------------------------------------------------*/
@@ -89,4 +70,58 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/* Goal -----------------------------------------------------------------------------*/
+#left {
+    margin-top: 5%;
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    background-color: #b7ddb0;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+    min-height: 900px;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+#middle {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    background-color: #fffc5e;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+    min-height: 900px;
+    border-radius: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+}
+
+#right {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    background-color: #ff4f4f;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+    min-height: 900px;
+    border-radius: 20px;
+}
+
+.goalsdiv {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
 }

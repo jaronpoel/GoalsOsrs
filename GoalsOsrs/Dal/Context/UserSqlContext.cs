@@ -12,19 +12,75 @@ namespace Dal.Context
     public class UserSqlContext : IUser, IUserCollection
     {
         //add
-        public void AddUser()
+        public void AddUser(string name, string password, string email)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection connection = DataConnection.GetConnection())
+                {
+                    connection.Open();
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandText = "INSERT INTO [User] (Email, Name, Password) VALUES (@Email, @Name, @Password)";
+                    command.Parameters.AddWithValue("@Email", email);
+                    command.Parameters.AddWithValue("@Username", name);
+                    command.Parameters.AddWithValue("@Password", password);
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (SqlException)
+            {
+                throw new SignUpFailedException("An unexpected error occured.");
+            }
         }
         //delete
-        public void DeleteUser()
+        public void DeleteUser(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection connection = DataConnection.GetConnection())
+                {
+                    connection.Open();
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandText = "DELETE FROM [User] WHERE @Id = id;";
+                    command.Parameters.AddWithValue("@Id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (SqlException)
+            {
+                throw new NotImplementedException();
+            }
         }
         //getbyid
-        public void GetUserByID()
+        public UserDTO GetUserByID(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection conn = DataConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT * From [User] WHERE Id=@id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                    UserDTO user = new UserDTO();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            user.Id = (int)reader["Id"];
+                            user.Name = (string)reader["Name"];
+                            user.Email = (string)reader["Email"];
+                            user.Password = (string)reader["Password"];
+                        }
+                    }
+                    return (user);
+                }
+            }
+            catch (SqlException)
+            {
+                throw new NotImplementedException();
+            }
         }
         //update
         public void UpdateUser()

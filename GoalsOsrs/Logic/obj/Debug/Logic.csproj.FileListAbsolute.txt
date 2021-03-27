@@ -15,3 +15,5 @@ C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Logic\obj\Debug\Logic.dl
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Logic\obj\Debug\Logic.pdb
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Logic\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Logic\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Logic\bin\Debug\DatabaseOsrs.mdf
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Logic\bin\Debug\DatabaseOsrs_log.ldf

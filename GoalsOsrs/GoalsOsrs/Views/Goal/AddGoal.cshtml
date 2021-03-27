@@ -1,0 +1,51 @@
+﻿@model GoalsOsrs.Models.GoalViewModel
+
+@{
+    ViewData["Title"] = "Add Goal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Add Goal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <section>
+                    <form asp-action="AddGoal">
+                        <h4>Create a Goal</h4>
+                        <hr />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Kind"></label>
+                            <select asp-for="Kind" name="Kind" class="form-control">
+                                <option value="Level">Level</option>
+                                <option value="Killcount">Killcount</option>
+                                <option value="Item">Item</option>
+                            </select>
+                            <span asp-validation-for="Kind" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Extra">Wordt een popup als iets gekozen is in het soort goal</label>
+                            <input asp-for="Extra" class="form-control" />
+                            <span asp-validation-for="Extra" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Description"></label>
+                            <input asp-for="Description" class="form-control" style="height: 425px; />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="button button-wide">Make the goal</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>

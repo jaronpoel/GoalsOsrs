@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Goals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Goals</title>
+</head>
+<body>
+    <div class="goalsdiv">
+        <div id="left">
+            <h3>Done</h3>
+        </div>
+
+        <div id="middle">
+            <h3>Close</h3>
+        </div>
+
+        <div id="right">
+            <h3>Too Far</h3>
+        </div>
+    </div>
+    <form asp-action="AddGoal">
+        <button class="bottom-right">Make goal</button>
+    </form>
+</body>

@@ -46,7 +46,7 @@ namespace Logic
             return user;
         }
 
-        public User UpdateUser()
+        public User UpdateUser(string email, string password, string name)
         {
             throw new NotImplementedException();
         }
