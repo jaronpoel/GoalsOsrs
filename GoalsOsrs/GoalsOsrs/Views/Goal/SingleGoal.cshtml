@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <form asp-action="DeleteGoal">
+    <form asp-action="DeleteGoal" asp-route-id="@ViewBag.Goal.Id">
         <button class="bottom-right">Delete</button>
     </form>
 </body>

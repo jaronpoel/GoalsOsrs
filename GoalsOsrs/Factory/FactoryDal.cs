@@ -32,5 +32,15 @@ namespace Factory
         }
 
         //Voor IngameAccount
+        public static IIngameAccount CreateIngameAccountDal()
+        {
+            return new IngameAccountSqlContext();
+        }
+
+        public static IIngameAccountCollection CreateIngameAccounCollectiontDal()
+        {
+            return new IngameAccountSqlContext();
+        }
+
     }
 }

@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\IngameAccountSqlContext.cs" />
     <Compile Include="Context\GoalSqlContext.cs" />
     <Compile Include="Context\UserSqlContext.cs" />
     <Compile Include="DataConnection.cs" />

@@ -46,7 +46,7 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "UPDATE [Goal] SET (values) WHERE Id = @id";
+                    command.CommandText = "UPDATE Goal SET (values) WHERE Id = @Id";
                     //parameters erin zetten
                     command.ExecuteNonQuery();
                 }
@@ -66,7 +66,7 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "DELETE FROM [Goal] WHERE Id = @id;";
+                    command.CommandText = "DELETE FROM Goal WHERE Id = @Id";
                     command.Parameters.AddWithValue("@Id", id);
                     command.ExecuteNonQuery();
                 }
