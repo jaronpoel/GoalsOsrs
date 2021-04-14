@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-10">
                 <section>
-                    <form asp-action="AddGoal">
+                    <form asp-action="AddGoalAdded">
                         <h4>Create a Goal</h4>
                         <hr />
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -21,23 +21,22 @@
                             <input asp-for="Title" class="form-control" />
                             <span asp-validation-for="Title" class="text-danger"></span>
                         </div>
+                        <!-- voor nu alleen level-->
                         <div class="form-group">
                             <label asp-for="Kind"></label>
                             <select asp-for="Kind" name="Kind" class="form-control">
                                 <option value="Level">Level</option>
-                                <option value="Killcount">Killcount</option>
-                                <option value="Item">Item</option>
                             </select>
                             <span asp-validation-for="Kind" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Extra">Wordt een popup als iets gekozen is in het soort goal</label>
-                            <input asp-for="Extra" class="form-control" />
-                            <span asp-validation-for="Extra" class="text-danger"></span>
+                            <label asp-for="Level">Wordt een popup als iets gekozen is in het soort goal</label>
+                            <input asp-for="Level" class="form-control" />
+                            <span asp-validation-for="Level" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label asp-for="Description"></label>
-                            <input asp-for="Description" class="form-control" style="height: 425px; />
+                            <textarea asp-for="Description" class="form-control" style="height: 425px" ; /></textarea>
                             <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
                         <div class="form-group">

@@ -15,7 +15,7 @@ namespace GoalsOsrs.Models
 
         [Required]
         [DataType(DataType.Text)]
-        public string Extra { get; set; }
+        public int Level { get; set; }
 
         [Required]
         [DataType(DataType.Text)]

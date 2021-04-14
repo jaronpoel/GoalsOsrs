@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\GoalDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="Interfaces\IGoalCollection.cs" />
+    <Compile Include="Interfaces\IGoal.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IUserCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

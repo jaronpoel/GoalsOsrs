@@ -1,4 +1,6 @@
-﻿@{
+﻿@model  GoalsOsrs.Models.AllGoalsViewModel
+@using Logic;
+@{
     ViewData["Title"] = "Goals";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -17,7 +19,11 @@
 
         <div id="right">
             <h3>Too Far</h3>
-        </div>
+            @foreach (Goal goal in Model.ListOfGoals)
+            {
+                <a asp-action="SingleGoal" asp-route-id="@goal.Id" asp-controller="Goal"><div class="goals"><p>@goal.Title</p></div></a>
+            }
+            </div>
     </div>
     <form asp-action="AddGoal">
         <button class="bottom-right">Make goal</button>

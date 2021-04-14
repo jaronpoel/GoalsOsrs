@@ -55,4 +55,5 @@ C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\bin\Debug\netc
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\GoalsOsrs.csproj.CoreCompileInputs.cache
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\GoalsOsrs.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\AddGoal.cshtml.g.cs
-C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\Goal.cshtml.g.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\Goals.cshtml.g.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\SingleGoal.cshtml.g.cs

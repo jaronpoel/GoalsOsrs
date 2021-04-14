@@ -19,5 +19,18 @@ namespace Factory
         {
             return new UserSqlContext();
         }
+
+        //Voor Goal
+        public static IGoal CreateGoalDal()
+        {
+            return new GoalSqlContext();
+        }
+
+        public static IGoalCollection CreateGoalCollectionDal()
+        {
+            return new GoalSqlContext();
+        }
+
+        //Voor IngameAccount
     }
 }
