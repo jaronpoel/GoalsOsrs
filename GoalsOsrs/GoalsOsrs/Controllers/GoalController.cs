@@ -28,11 +28,24 @@ namespace GoalsOsrs.Controllers
             return View();
         }
 
-        public ActionResult DeleteGoal(int id)
+        public IActionResult DeleteGoal(int id)
         {
             GoalCollection.DeleteGoal(id);
             return RedirectToAction("Goals", "Goal");
         }
+
+        public IActionResult UpdateGoal(int id)
+        {
+            Goal goal = GoalCollection.GetByIDGoals(id);
+            if (goal == null)
+            {
+                return RedirectToAction("Goals", "Goal");
+            }
+            ViewBag.Goal = goal;
+            return View();
+        }
+
+        //UpdateFullGoal
 
         public IActionResult SingleGoal(int id)
         {

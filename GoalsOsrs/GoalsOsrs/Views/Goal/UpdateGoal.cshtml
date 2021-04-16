@@ -1,0 +1,34 @@
+﻿@model GoalsOsrs.Models.GoalViewModel
+
+@{
+    ViewData["Title"] = "UpdateGoal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>UpdateGoal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="UpdateFullGoal" asp-route-id="@ViewBag.Goal.Id">
+                    <h4>Change a Goal.</h4>
+                    <hr />
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Title"></label>
+                        <input asp-for="Title" class="form-control" value=@ViewBag.Goal.Title />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Description"></label>
+                        <textarea asp-for="Description" class="form-control" style="height: 425px" ; />@ViewBag.Goal.Description</textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <button class="">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

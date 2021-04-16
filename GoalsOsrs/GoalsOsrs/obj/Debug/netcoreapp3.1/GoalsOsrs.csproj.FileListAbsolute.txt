@@ -57,3 +57,7 @@ C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netc
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\AddGoal.cshtml.g.cs
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\Goals.cshtml.g.cs
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\SingleGoal.cshtml.g.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\UpdateGoal.cshtml.g.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\IngameAccount\AddIngameAccount.cshtml.g.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\IngameAccount\IngameAccounts.cshtml.g.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\IngameAccount\SingleIngameAccount.cshtml.g.cs

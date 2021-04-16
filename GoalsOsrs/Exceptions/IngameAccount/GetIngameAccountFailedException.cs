@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Exceptions.Goal
+namespace Exceptions.IngameAccount
 {
     public class GetIngameAccountFailedException : Exception
     {

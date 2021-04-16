@@ -12,7 +12,7 @@ namespace Dal.Context
 {
     public class GoalSqlContext : IGoal, IGoalCollection
     {
-        //as of right now alleen level haalt hij op en van AccountId = 1
+        //as of right now alleen level haalt hij op en van AccountId = 1 (ingameaccount aan koppelen)
 
         //add
         public void AddGoal(GoalDTO goal)
@@ -46,7 +46,7 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "UPDATE Goal SET (values) WHERE Id = @Id";
+                    command.CommandText = "UPDATE [Goal] SET (values) WHERE Id = @Id";
                     //parameters erin zetten
                     command.ExecuteNonQuery();
                 }
@@ -66,7 +66,7 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "DELETE FROM Goal WHERE Id = @Id";
+                    command.CommandText = "DELETE FROM [Goal] WHERE Id = @Id";
                     command.Parameters.AddWithValue("@Id", id);
                     command.ExecuteNonQuery();
                 }

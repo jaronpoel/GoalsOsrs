@@ -1,4 +1,4 @@
-﻿using Exceptions.Goal;
+﻿using Exceptions.IngameAccount;
 using Interfaces.DTO;
 using System;
 using System.Collections.Generic;
@@ -16,19 +16,42 @@ namespace Dal.Context
         //add
         public void AddIngameAccount(IngameAccountDTO ingameAccount)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection connection = DataConnection.GetConnection())
+                {
+                    connection.Open();
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandText = "INSERT INTO [IngameAccount] () VALUES ()";
+                    command.Parameters.AddWithValue("@Username", ingameAccount.Username);
+                    command.Parameters.AddWithValue("@Type", ingameAccount.Type);
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (SqlException)
+            {
+                throw new AddIngameAccountFailedException("An unexpected error occured.");
+            }
         }
 
         //update
         public void UpdateIngameAccount(IngameAccountDTO ingameAccount)
         {
-            throw new NotImplementedException();
-        }
-
-        //delete
-        public void DeleteIngameAccount(int id)
-        {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection connection = DataConnection.GetConnection())
+                {
+                    connection.Open();
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandText = "UPDATE [IngameAccount] () VALUES () WHERE Id = @Id";
+                    //parameters
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (SqlException)
+            {
+                throw new UpdateIngameAccountFailedException("An unexpected error occured.");
+            }
         }
 
         //getAll

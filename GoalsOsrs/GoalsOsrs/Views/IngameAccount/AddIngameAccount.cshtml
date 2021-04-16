@@ -1,0 +1,43 @@
+﻿@model GoalsOsrs.Models.IngameAccountViewModel
+
+@{
+    ViewData["Title"] = "Add Goal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Add IngameAccount</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <section>
+                    <form asp-action="AddIngameAccountAdded">
+                        <h4>Create a IngameAccount</h4>
+                        <hr />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Name"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label asp-for="Type"></label>
+                            <select asp-for="Type" name="Kind" class="form-control">
+                                <option value="Normal">Normal</option>
+                                <option value="Ironman">Ironman</option>
+                                <option value="Hardcore ironman">Hardcore ironman</option>
+                                <option value="Ultimate ironman">Ultimate ironman</option>
+                            </select>
+                            <span asp-validation-for="Type" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="button button-wide">Make the account</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
