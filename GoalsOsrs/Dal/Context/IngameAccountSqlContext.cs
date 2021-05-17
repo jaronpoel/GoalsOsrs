@@ -22,7 +22,7 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "INSERT INTO [IngameAccount] () VALUES ()";
+                    command.CommandText = "INSERT INTO [IngameAccount] (Name, Type, UserID) VALUES (@Username, @Type, 1)";
                     command.Parameters.AddWithValue("@Username", ingameAccount.Username);
                     command.Parameters.AddWithValue("@Type", ingameAccount.Type);
                     command.ExecuteNonQuery();
@@ -57,13 +57,68 @@ namespace Dal.Context
         //getAll
         public List<IngameAccountDTO> GetAllIngameAccounts()
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection conn = DataConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM IngameAccount WHERE UserID = 1";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.ExecuteNonQuery();
+                    DataTable dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+
+                    List<IngameAccountDTO> AllIngameAccounts = new List<IngameAccountDTO>();
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        IngameAccountDTO ingameAccount = new IngameAccountDTO();
+
+                        int.TryParse(dr[0].ToString(), out int id);
+                        ingameAccount.Id = id;
+                        ingameAccount.Username = dr[2].ToString();
+                        ingameAccount.Type = dr[3].ToString();
+
+
+                        AllIngameAccounts.Add(ingameAccount);
+                    }
+                    return (AllIngameAccounts);
+                }
+            }
+            catch (SqlException)
+            {
+                throw new GetIngameAccountFailedException("An unexpected error occured.");
+            }
         }
 
         //getById
         public IngameAccountDTO GetByIDIngameAccount(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection conn = DataConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT * From IngameAccount WHERE Id=@id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                    IngameAccountDTO ingameAccount = new IngameAccountDTO();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            ingameAccount.Id = (int)reader["Id"];
+                            ingameAccount.Username = (string)reader["Name"];
+                            ingameAccount.Type = (string)reader["Type"];
+                        }
+                    }
+                    return (ingameAccount);
+                }
+            }
+            catch (SqlException)
+            {
+                throw new GetIngameAccountFailedException("An unexpected error occured.");
+            }
         }
     }
 }

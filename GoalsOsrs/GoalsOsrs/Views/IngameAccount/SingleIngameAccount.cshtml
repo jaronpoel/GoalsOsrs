@@ -3,38 +3,35 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
-    <title>Goal</title>
+    <title>IngameAccount</title>
 </head>
 <body>
+    <!-- Naam-->
     <div class="col-md-12">
         <div>
-            <h1>@ViewBag.Goal.Title</h1>
+            Username:<h1>@ViewBag.Account.Username</h1>
         </div>
     </div>
 
-    <hr>
+    <hr />
 
+    <!-- Type-->
     <div class="col-md-12">
         <div>
-            <h1>@ViewBag.Goal.Kind:</h1><h1>@ViewBag.Goal.Level</h1>
+            Type account:<h1>@ViewBag.Account.Type</h1>
         </div>
     </div>
 
-    <hr>
-
+    <hr />
+    <!-- Stats-->
     <div class="col-md-12">
-        <h2>Description:</h2>
         <div>
-            <p>@ViewBag.Goal.Description</p>
+            Stats of the account:
+            <!-- hoe? -->
         </div>
     </div>
 
-    <form asp-action="UpdateGoal" asp-route-id="@ViewBag.Goal.Id">
-        <button class="">Update</button>
+    <form asp-action="UpdateIngameAccount" asp-route-id="@ViewBag.Account.Id">
+        <button class="bottom-right">Update</button>
     </form>
-
-    <form asp-action="DeleteGoal" asp-route-id="@ViewBag.Goal.Id">
-        <button class="bottom-right">Delete</button>
-    </form>
-
 </body>

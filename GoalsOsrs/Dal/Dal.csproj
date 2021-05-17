@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Context\IngameAccountSqlContext.cs" />
     <Compile Include="Context\GoalSqlContext.cs" />
+    <Compile Include="Context\StatSqlContext.cs" />
     <Compile Include="Context\UserSqlContext.cs" />
     <Compile Include="DataConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

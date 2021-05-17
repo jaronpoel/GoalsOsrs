@@ -22,6 +22,12 @@ namespace Logic
             Type = type;
         }
 
+        public IngameAccount(string username, string type)
+        {
+            Username = username;
+            Type = type;
+        }
+
         //Factory aanroepen
         private readonly IIngameAccount IngameAccountDAL;
         public IngameAccount()

@@ -42,5 +42,11 @@ namespace Factory
             return new IngameAccountSqlContext();
         }
 
+        //Voor Stat
+        public static IStat CreateStatDal()
+        {
+            return new StatSqlContext();
+        }
+
     }
 }

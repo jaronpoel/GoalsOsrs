@@ -1,5 +1,6 @@
 ﻿using Dal.Context;
 using Factory;
+using Interfaces.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,9 +55,10 @@ namespace Logic
         }
 
         //methodes
-        public User UpdateGoal()
+        public void UpdateGoal(Goal goal)
         {
-            throw new NotImplementedException();
+            GoalDTO goalDTO = new GoalDTO(goal.Title, goal.Level, goal.Description, goal.Kind);
+            GoalDAL.UpdateGoal(goalDTO);
         }
     }
 }

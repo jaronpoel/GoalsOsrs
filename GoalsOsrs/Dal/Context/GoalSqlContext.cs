@@ -47,7 +47,10 @@ namespace Dal.Context
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
                     command.CommandText = "UPDATE [Goal] SET (values) WHERE Id = @Id";
-                    //parameters erin zetten
+                    command.Parameters.AddWithValue("@Title", goal.Title);
+                    command.Parameters.AddWithValue("@Level", goal.Level);
+                    command.Parameters.AddWithValue("@Description", goal.Description);
+                    command.Parameters.AddWithValue("@Kind", goal.Kind);
                     command.ExecuteNonQuery();
                 }
             }

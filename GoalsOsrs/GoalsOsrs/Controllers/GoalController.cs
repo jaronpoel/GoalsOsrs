@@ -45,8 +45,6 @@ namespace GoalsOsrs.Controllers
             return View();
         }
 
-        //UpdateFullGoal
-
         public IActionResult SingleGoal(int id)
         {
             Goal goal = GoalCollection.GetByIDGoals(id);
@@ -70,6 +68,28 @@ namespace GoalsOsrs.Controllers
             {
                 Goal newgoal = new Goal(goal.Title, goal.Level, goal.Description, goal.Kind);
                 GoalCollection.AddGoal(newgoal);
+                return RedirectToAction("Goals", "Goal");
+            }
+            catch (AddGoalFailedException exception)
+            {
+                ModelState.AddModelError("", exception.Message);
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult UpdateFullGoal(GoalViewModel goal)
+        {
+            //klopt nog niet voor kind en level. haal ik niet op en daarom zegt de app nu dat modelstate false is.
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            try
+            {
+                Goal updategoal = new Goal(goal.Title, goal.Level, goal.Description, goal.Kind);
+                Goal.UpdateGoal(updategoal);
                 return RedirectToAction("Goals", "Goal");
             }
             catch (AddGoalFailedException exception)

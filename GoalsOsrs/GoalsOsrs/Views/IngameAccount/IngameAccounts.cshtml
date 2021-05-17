@@ -1,31 +1,20 @@
-﻿@model  GoalsOsrs.Models.AllGoalsViewModel
+﻿@model  GoalsOsrs.Models.AllIngameAccountsViewModel
 @using Logic;
 @{
     ViewData["Title"] = "Goals";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
-    <title>Goals</title>
+    <title>IngameAccounts</title>
 </head>
 <body>
-    <div class="goalsdiv">
-        <div id="left">
-            <h3>Done</h3>
-        </div>
-
-        <div id="middle">
-            <h3>Close</h3>
-        </div>
-
-        <div id="right">
-            <h3>Too Far</h3>
-            @foreach (Goal goal in Model.ListOfGoals)
-            {
-                <a asp-action="SingleGoal" asp-route-id="@goal.Id" asp-controller="Goal"><div class="goals"><p>@goal.Title</p></div></a>
-            }
-            </div>
+    <div>
+        @foreach (IngameAccount ingameAccount in Model.ListOfIngameAccounts)
+        {
+            <a asp-action="SingleIngameAccount" asp-route-id="@ingameAccount.Id" asp-controller="IngameAccount"><div class="goals"><p>@ingameAccount.Username</p></div></a>
+        }
     </div>
-    <form asp-action="AddGoal">
-        <button class="bottom-right">Make goal</button>
+    <form asp-action="AddIngameAccount">
+        <button class="bottom-right">Make a Account</button>
     </form>
 </body>
