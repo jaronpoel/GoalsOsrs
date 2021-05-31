@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class IngameAccountSqlContext : IIngameAccountCollection, IIngameAccount
+    public class IngameAccountSqlContext : IIngameAccountCollectionDal, IIngameAccountDal
     {
 
         //add
@@ -63,10 +63,10 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * FROM IngameAccount WHERE UserID = 1";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.ExecuteNonQuery();
                     DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
+                    dt.Load(command.ExecuteReader());
 
                     List<IngameAccountDTO> AllIngameAccounts = new List<IngameAccountDTO>();
                     foreach (DataRow dr in dt.Rows)
@@ -99,11 +99,11 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * From IngameAccount WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
                     IngameAccountDTO ingameAccount = new IngameAccountDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {

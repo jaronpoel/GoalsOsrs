@@ -1,6 +1,7 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+using Logic.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class Goal
+    public class Goal: IGoal
     {
         public int Id { get; }
         public string Title { get; }
@@ -48,14 +49,14 @@ namespace Logic
         }
 
         //Factory aanroepen
-        private readonly IGoal GoalDAL;
-        public Goal()
+        private readonly IGoalDal GoalDAL;
+        public Goal(IGoalDal goalDal)
         {
-            GoalDAL = FactoryDal.CreateGoalDal();
+            GoalDAL = goalDal;
         }
 
         //methodes
-        public void UpdateGoal(Goal goal)
+        public void UpdateGoal(IGoal goal)
         {
             GoalDTO goalDTO = new GoalDTO(goal.Title, goal.Level, goal.Description, goal.Kind);
             GoalDAL.UpdateGoal(goalDTO);

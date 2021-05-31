@@ -31,6 +31,10 @@
         </div>
     </div>
 
+    <form asp-action="Goals" asp-route-AccId="@ViewBag.Account.Id">
+        <button class="bottom-left">Goals</button>
+    </form>
+
     <form asp-action="UpdateIngameAccount" asp-route-id="@ViewBag.Account.Id">
         <button class="bottom-right">Update</button>
     </form>

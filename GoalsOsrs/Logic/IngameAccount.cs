@@ -1,6 +1,7 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+using Logic.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class IngameAccount
+    public class IngameAccount: IIngameAccount
     {
         public int Id { get; }
         public string Username { get; }
@@ -29,13 +30,17 @@ namespace Logic
         }
 
         //Factory aanroepen
-        private readonly IIngameAccount IngameAccountDAL;
-        public IngameAccount()
+        private readonly IIngameAccountDal IngameAccountDAL;
+        public IngameAccount(IIngameAccountDal ingameAccountDal)
         {
-            IngameAccountDAL = FactoryDal.CreateIngameAccountDal();
+            IngameAccountDAL = ingameAccountDal;
         }
 
         //Begin van de Methodes aanroepen
+        public void UpdateIngameAccount(IIngameAccount ingameAccount)
+        {
+            throw new NotImplementedException();
+        }
         //hier mogen ook de goal collection bij komen zodat die weg kan.
     }
 }

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Coalitie.Classes
 {
-    class Party
+    public class Party
     {
-        public string Name { get; private set; }
-        public int Votes { get; private set; }
+        public string Name { get; set; }
+        public int Votes { get; set; }
+        public int Seats { get; set; }
 
         public Party()
         {

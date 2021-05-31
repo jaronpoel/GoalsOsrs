@@ -1,22 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj": {}
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj",
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj"
               },
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -26,23 +26,18 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
-        "packagesPath": "C:\\Users\\Jaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\obj\\",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
+        "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -86,23 +81,88 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj",
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj",
+        "projectName": "FactoryLogic",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj",
+        "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj"
+              },
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj"
+              },
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj",
         "projectName": "Factory",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Dal\\Dal.csproj"
               },
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -112,23 +172,18 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
         "projectName": "GoalsOsrs",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
-        "packagesPath": "C:\\Users\\Jaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\obj\\",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+        "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -140,8 +195,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj"
+              },
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj"
+              },
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj"
+              },
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj"
               }
             }
           }
@@ -170,12 +234,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -184,33 +242,91 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj",
+        "projectName": "InterfacesLogic",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj",
+        "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Factory\\Factory.csproj"
               },
-              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj"
+              },
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Interfaces\\Interfaces.csproj"
               }
             }
           }

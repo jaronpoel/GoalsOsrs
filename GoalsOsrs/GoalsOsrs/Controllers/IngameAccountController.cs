@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Exceptions.IngameAccount;
+using FactoryLogic;
 using GoalsOsrs.Models;
 using Logic;
+using Logic.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GoalsOsrs.Controllers
 {
     public class IngameAccountController : Controller
     {
-        private IngameAccount ingameAccount { get; } = new IngameAccount();
-        private IngameAccountCollection ingameAccountCollection { get; } = new IngameAccountCollection();
+        private IIngameAccount ingameAccount { get; } = FactoryLogicLayer.CreateIngameAccount();
+        private IIngameAccountCollection ingameAccountCollection { get; } = FactoryLogicLayer.CreateIngameAccounCollectiont();
+        private IGoalCollection GoalCollection { get; } = FactoryLogicLayer.CreateGoalCollection();
 
         public IActionResult IngameAccounts()
         {
@@ -28,7 +31,7 @@ namespace GoalsOsrs.Controllers
 
         public IActionResult SingleIngameAccount(int id)
         {
-            IngameAccount account = ingameAccountCollection.GetIngameAccountByID(id);
+            IIngameAccount account = ingameAccountCollection.GetIngameAccountByID(id);
             if (account == null)
             {
                 return RedirectToAction("IngameAccounts", "IngameAccount");
@@ -56,6 +59,14 @@ namespace GoalsOsrs.Controllers
                 ModelState.AddModelError("", exception.Message);
                 return RedirectToAction("Index", "Home");
             }
+        }
+
+        //goals
+        public IActionResult Goals(int AccId)
+        {
+            AllGoalsViewModel ViewModel = new AllGoalsViewModel();
+            ViewModel.ListOfGoals = GoalCollection.GetAllGoalsByIngameAccount(AccId);
+            return View(ViewModel);
         }
     }
 }

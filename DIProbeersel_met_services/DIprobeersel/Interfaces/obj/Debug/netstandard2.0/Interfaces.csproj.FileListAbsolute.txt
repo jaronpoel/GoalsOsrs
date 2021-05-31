@@ -1,0 +1,9 @@
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\Interfaces.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\Interfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\Interfaces.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\Interfaces.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\Interfaces.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\Interfaces.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\Interfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\Interfaces.pdb

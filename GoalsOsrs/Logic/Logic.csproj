@@ -57,6 +57,10 @@
       <Project>{FC02E3F2-2C92-405A-81E3-26B302767F5D}</Project>
       <Name>Factory</Name>
     </ProjectReference>
+    <ProjectReference Include="..\InterfacesLogic\InterfacesLogic.csproj">
+      <Project>{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}</Project>
+      <Name>InterfacesLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{6860F8BA-06E2-4D9A-84EA-AA19C7314200}</Project>
       <Name>Interfaces</Name>

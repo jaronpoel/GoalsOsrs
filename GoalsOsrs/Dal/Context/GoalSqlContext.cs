@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class GoalSqlContext : IGoal, IGoalCollection
+    public class GoalSqlContext : IGoalDal, IGoalCollectionDal
     {
         //as of right now alleen level haalt hij op en van AccountId = 1 (ingameaccount aan koppelen)
 
@@ -81,18 +81,19 @@ namespace Dal.Context
         }
 
         //getAll
-        public List<GoalDTO> GetAllGoals()
+        public List<GoalDTO> GetAllGoalsByIngameAccount(int AccId)
         {
             try
             {
                 using (SqlConnection conn = DataConnection.GetConnection())
                 {
                     conn.Open();
-                    string query = "SELECT * FROM Goal WHERE IngameAccountID = 1";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.ExecuteNonQuery();
+                    string query = "SELECT * FROM Goal WHERE IngameAccountID = @id";
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@Id", AccId);
+                    command.ExecuteNonQuery();
                     DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
+                    dt.Load(command.ExecuteReader());
 
                     List<GoalDTO> AllGoals = new List<GoalDTO>();
                     foreach (DataRow dr in dt.Rows)
@@ -127,11 +128,11 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * From Goal WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
                     GoalDTO goal = new GoalDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {

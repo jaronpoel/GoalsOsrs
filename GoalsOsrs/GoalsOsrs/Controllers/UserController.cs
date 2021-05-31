@@ -9,13 +9,16 @@ using GoalsOsrs.Models;
 using Microsoft.AspNetCore.Http;
 using Logic;
 using Exceptions.User;
+using Logic.Interfaces;
+using Dal.Context;
+using FactoryLogic;
 
 namespace GoalsOsrs.Controllers
 {
     public class UserController : Controller
     {
-        private UserCollection UserCollection { get; } = new UserCollection();
-        private User User { get; } = new User();
+        private IUserCollection UserCollection { get; } = FactoryLogicLayer.CreateUserCollection();
+        private IUser User { get; } = FactoryLogicLayer.CreateUser();
         public ActionResult SignIn()
         {
             return View();
@@ -37,7 +40,7 @@ namespace GoalsOsrs.Controllers
 
             try
             {
-                User auth = User.SignIn(user.Email, user.Password);
+                IUser auth = User.SignIn(user.Email, user.Password);
                 HttpContext.Session.SetInt32("userid", auth.Id);
                 HttpContext.Session.SetString("name", auth.Name);
                 return RedirectToAction("Index", "Home");

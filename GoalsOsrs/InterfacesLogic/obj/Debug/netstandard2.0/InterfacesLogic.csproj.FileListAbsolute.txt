@@ -1,0 +1,9 @@
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\bin\Debug\netstandard2.0\InterfacesLogic.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\bin\Debug\netstandard2.0\InterfacesLogic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\bin\Debug\netstandard2.0\InterfacesLogic.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\obj\Debug\netstandard2.0\InterfacesLogic.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\obj\Debug\netstandard2.0\InterfacesLogic.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\obj\Debug\netstandard2.0\InterfacesLogic.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\obj\Debug\netstandard2.0\InterfacesLogic.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\obj\Debug\netstandard2.0\InterfacesLogic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\InterfacesLogic\obj\Debug\netstandard2.0\InterfacesLogic.pdb

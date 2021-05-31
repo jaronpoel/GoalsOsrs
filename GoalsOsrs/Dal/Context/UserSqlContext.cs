@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class UserSqlContext : IUser, IUserCollection
+    public class UserSqlContext : IUserDal, IUserCollectionDal
     {
         //add
         public void AddUser(string name, string password, string email)
@@ -60,11 +60,11 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * From [User] WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
                     UserDTO user = new UserDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {

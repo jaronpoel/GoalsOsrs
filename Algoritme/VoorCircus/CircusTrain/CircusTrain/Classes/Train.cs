@@ -15,7 +15,6 @@ namespace CircusTrain.classes
         public Wagon WagonObj = new Wagon();
 
         public int WagonSpace = 0;
-        //What Wagon
         public int J = 0;
 
         public bool WagonFull = false;
@@ -61,9 +60,9 @@ namespace CircusTrain.classes
 
         private void PlaceCarnivore(Animal animal)
         {
-            bool ContinuPlacing = EmptyWagonListCheck(animal);
+            bool ContinuDividing = EmptyWagonListCheck(animal);
 
-            if (ContinuPlacing == false)
+            if (ContinuDividing == false)
             {
                 CheckWagonSearcher();
                 PlaceAnimals(animal);
@@ -72,10 +71,10 @@ namespace CircusTrain.classes
 
         public void PlaceAnimals(Animal animal)
         {
-            bool ContinuPlacing = EmptyWagonListCheck(animal);
+            bool ContinuDividing = EmptyWagonListCheck(animal);
             CheckWagonSearcher();
 
-            if (ContinuPlacing == false)
+            if (ContinuDividing == false)
              {
                 // loop once over the wagon and the animals in it.
                 for (int i = 0; i < 1; i++)
@@ -177,7 +176,7 @@ namespace CircusTrain.classes
             //If there are wagons check first if J is bigger or equal than the Wagons
             if (J >= Wagons.Count())
             {
-                //If j is bigger or equal reset J back to 0
+                //If j is bigger or equal rest J back to 0
                 J = 0;
             }
         }

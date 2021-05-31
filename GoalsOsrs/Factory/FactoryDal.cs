@@ -10,42 +10,36 @@ namespace Factory
     public class FactoryDal
     {
         //Voor User
-        public static IUser CreateUserDal()
+        public static IUserDal CreateUserDal()
         {
             return new UserSqlContext();
         }
 
-        public static IUserCollection CreateUserCollectionDal()
+        public static IUserCollectionDal CreateUserCollectionDal()
         {
             return new UserSqlContext();
         }
 
         //Voor Goal
-        public static IGoal CreateGoalDal()
+        public static IGoalDal CreateGoalDal()
         {
             return new GoalSqlContext();
         }
 
-        public static IGoalCollection CreateGoalCollectionDal()
+        public static IGoalCollectionDal CreateGoalCollectionDal()
         {
             return new GoalSqlContext();
         }
 
         //Voor IngameAccount
-        public static IIngameAccount CreateIngameAccountDal()
+        public static IIngameAccountDal CreateIngameAccountDal()
         {
             return new IngameAccountSqlContext();
         }
 
-        public static IIngameAccountCollection CreateIngameAccounCollectiontDal()
+        public static IIngameAccountCollectionDal CreateIngameAccounCollectiontDal()
         {
             return new IngameAccountSqlContext();
-        }
-
-        //Voor Stat
-        public static IStat CreateStatDal()
-        {
-            return new StatSqlContext();
         }
 
     }

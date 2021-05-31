@@ -8,3 +8,13 @@ C:\Users\Jaron\source\repos\Coalitie\Coalitie\obj\Debug\Coalitie.csproj.CoreComp
 C:\Users\Jaron\source\repos\Coalitie\Coalitie\obj\Debug\Coalitie.exe
 C:\Users\Jaron\source\repos\Coalitie\Coalitie\obj\Debug\Coalitie.pdb
 C:\Users\Jaron\source\repos\Coalitie\Coalitie\obj\Debug\Coalitie.Form1.resources
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\bin\Debug\Coalitie.exe.config
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\bin\Debug\Coalitie.exe
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\bin\Debug\Coalitie.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.Form1.resources
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.Properties.Resources.resources
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.csproj.GenerateResource.cache
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.exe
+C:\Users\jaatj\OneDrive\Bureaublad\Coalitie\Coalitie\obj\Debug\Coalitie.pdb

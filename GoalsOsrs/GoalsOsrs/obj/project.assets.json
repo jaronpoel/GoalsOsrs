@@ -170,6 +170,21 @@
           "bin/placeholder/Factory.dll": {}
         }
       },
+      "FactoryLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "InterfacesLogic": "1.0.0",
+          "Logic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FactoryLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FactoryLogic.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "type": "project",
         "compile": {
@@ -179,11 +194,22 @@
           "bin/placeholder/Interfaces.dll": {}
         }
       },
+      "InterfacesLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/InterfacesLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfacesLogic.dll": {}
+        }
+      },
       "Logic/1.0.0": {
         "type": "project",
         "dependencies": {
           "Factory": "1.0.0",
-          "Interfaces": "1.0.0"
+          "Interfaces": "1.0.0",
+          "InterfacesLogic": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Logic.dll": {}
@@ -520,10 +546,20 @@
       "path": "../Factory/Factory.csproj",
       "msbuildProject": "../Factory/Factory.csproj"
     },
+    "FactoryLogic/1.0.0": {
+      "type": "project",
+      "path": "../FactoryLogic/FactoryLogic.csproj",
+      "msbuildProject": "../FactoryLogic/FactoryLogic.csproj"
+    },
     "Interfaces/1.0.0": {
       "type": "project",
       "path": "../Interfaces/Interfaces.csproj",
       "msbuildProject": "../Interfaces/Interfaces.csproj"
+    },
+    "InterfacesLogic/1.0.0": {
+      "type": "project",
+      "path": "../InterfacesLogic/InterfacesLogic.csproj",
+      "msbuildProject": "../InterfacesLogic/InterfacesLogic.csproj"
     },
     "Logic/1.0.0": {
       "type": "project",
@@ -533,32 +569,28 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Exceptions >= 1.0.0",
+      "FactoryLogic >= 1.0.0",
+      "InterfacesLogic >= 1.0.0",
       "Logic >= 1.0.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jaron\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jaatj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+      "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
       "projectName": "GoalsOsrs",
-      "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
-      "packagesPath": "C:\\Users\\Jaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\obj\\",
+      "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+      "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -570,8 +602,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
-              "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj"
+            "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
+              "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj"
+            },
+            "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj": {
+              "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj"
+            },
+            "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj": {
+              "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj"
+            },
+            "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
+              "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj"
             }
           }
         }
@@ -600,12 +641,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -614,7 +649,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

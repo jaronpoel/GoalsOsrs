@@ -8,18 +8,20 @@ using Microsoft.Extensions.Logging;
 using GoalsOsrs.Models;
 using Exceptions.Goal;
 using Logic;
+using Logic.Interfaces;
+using FactoryLogic;
 
 namespace GoalsOsrs.Controllers
 {
     public class GoalController : Controller
     {
-        private Goal Goal { get; } = new Goal();
-        private GoalCollection GoalCollection { get; } = new GoalCollection();
+        private IGoal Goal { get; } = FactoryLogicLayer.CreateGoal();
+        private IGoalCollection GoalCollection { get; } = FactoryLogicLayer.CreateGoalCollection();
 
-        public IActionResult Goals()
+        public IActionResult Goals(int AccId)
         {
             AllGoalsViewModel ViewModel = new AllGoalsViewModel();
-            ViewModel.ListOfGoals = GoalCollection.GetAllGoals();
+            ViewModel.ListOfGoals = GoalCollection.GetAllGoalsByIngameAccount(AccId);
             return View(ViewModel);
         }
 
@@ -36,7 +38,7 @@ namespace GoalsOsrs.Controllers
 
         public IActionResult UpdateGoal(int id)
         {
-            Goal goal = GoalCollection.GetByIDGoals(id);
+            IGoal goal = GoalCollection.GetByIDGoals(id);
             if (goal == null)
             {
                 return RedirectToAction("Goals", "Goal");
@@ -47,7 +49,7 @@ namespace GoalsOsrs.Controllers
 
         public IActionResult SingleGoal(int id)
         {
-            Goal goal = GoalCollection.GetByIDGoals(id);
+            IGoal goal = GoalCollection.GetByIDGoals(id);
             if (goal == null)
             {
                 return RedirectToAction("Goals", "Goal");
