@@ -60,13 +60,5 @@ namespace GoalsOsrs.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
-        //goals
-        public IActionResult Goals(int AccId)
-        {
-            AllGoalsViewModel ViewModel = new AllGoalsViewModel();
-            ViewModel.ListOfGoals = GoalCollection.GetAllGoalsByIngameAccount(AccId);
-            return View(ViewModel);
-        }
     }
 }

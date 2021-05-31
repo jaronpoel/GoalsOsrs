@@ -12,7 +12,6 @@ namespace Dal.Context
 {
     public class GoalSqlContext : IGoalDal, IGoalCollectionDal
     {
-        //as of right now alleen level haalt hij op en van AccountId = 1 (ingameaccount aan koppelen)
 
         //add
         public void AddGoal(GoalDTO goal)
@@ -21,10 +20,14 @@ namespace Dal.Context
             {
                 using (SqlConnection connection = DataConnection.GetConnection())
                 {
+                    //nog een goal aanmaken koppelen accounts
+                    int Accid = 1;
+
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "INSERT INTO [Goal] (Title, Level, Description, IngameAccountID, Kind) VALUES (@Title, @Level, @Description, 1, @Kind)";
+                    command.CommandText = "INSERT INTO [Goal] (Title, Level, Description, IngameAccountID, Kind) VALUES (@Title, @Level, @Description, @AccId, @Kind)";
                     command.Parameters.AddWithValue("@Title", goal.Title);
+                    command.Parameters.AddWithValue("@AccId", Accid);
                     command.Parameters.AddWithValue("@Level", goal.Level);
                     command.Parameters.AddWithValue("@Description", goal.Description);
                     command.Parameters.AddWithValue("@Kind", goal.Kind);

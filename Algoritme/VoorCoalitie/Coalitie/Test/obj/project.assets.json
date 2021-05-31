@@ -4640,11 +4640,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\Coalitie\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\Algoritme\\VoorCoalitie\\Coalitie\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\Coalitie\\Test\\Test.csproj",
+      "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\Algoritme\\VoorCoalitie\\Coalitie\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\Coalitie\\Test\\obj\\",
+      "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\Algoritme\\VoorCoalitie\\Coalitie\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4660,8 +4660,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\Coalitie\\Coalitie\\Coalitie.csproj": {
-              "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\Coalitie\\Coalitie\\Coalitie.csproj"
+            "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\Algoritme\\VoorCoalitie\\Coalitie\\Coalitie\\Coalitie.csproj": {
+              "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\Algoritme\\VoorCoalitie\\Coalitie\\Coalitie\\Coalitie.csproj"
             }
           }
         }

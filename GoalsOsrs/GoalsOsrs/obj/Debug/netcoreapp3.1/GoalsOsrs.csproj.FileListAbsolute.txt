@@ -127,5 +127,4 @@ C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\GoalsOsrs\bin\Debug\netco
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\GoalsOsrs\bin\Debug\netcoreapp3.1\InterfacesLogic.pdb
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\GoalsOsrs\bin\Debug\netcoreapp3.1\FactoryLogic.dll
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\GoalsOsrs\bin\Debug\netcoreapp3.1\FactoryLogic.pdb
-C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\IngameAccount\Goals.cshtml.g.cs
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\GoalsOsrs\obj\Debug\netcoreapp3.1\Razor\Views\Goal\Goals.cshtml.g.cs

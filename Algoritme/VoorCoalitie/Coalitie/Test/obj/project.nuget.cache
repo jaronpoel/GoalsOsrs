@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RJwQKdh/wK2YUfNz4qTJgDHjvBM/xCRpXvk3cQnD1Usd02WeYzYaQL6vh2dAkqyos3lNQpjqH6dpYlLfFPqxXA==",
+  "dgSpecHash": "MkWpivZ74eYP7J3ZJ5TwLjN7fpIv1IlKNZLlVvsCQxLkAvGSlOyiVDVRryjZn69yV6G0EIROPg5uJEIVh2pCUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\Coalitie\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\GoalsOsrs\\Algoritme\\VoorCoalitie\\Coalitie\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaatj\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Users\\jaatj\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

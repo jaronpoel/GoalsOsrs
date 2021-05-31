@@ -13,6 +13,7 @@ namespace Logic
     public class Goal: IGoal
     {
         public int Id { get; }
+        public int AccId { get; }
         public string Title { get; }
         public string Item { get;  }
         public int Level { get; }
@@ -20,9 +21,10 @@ namespace Logic
         public string Description { get; }
         public string Kind { get; }
 
-        public Goal(int id, string title, string item, int level, int killcount, string description, string kind)
+        public Goal(int id, int accid, string title, string item, int level, int killcount, string description, string kind)
         {
             Id = id;
+            AccId = accid;
             Title = title;
             Item = item;
             Level = level;
