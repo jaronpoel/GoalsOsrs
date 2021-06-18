@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\InterfacesDal.deps.json
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\InterfacesDal.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\InterfacesDal.pdb
@@ -6,3 +7,13 @@ C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.csproj.CoreCompileInputs.cache
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.pdb
+=======
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\InterfacesDal.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\InterfacesDal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\bin\Debug\netstandard2.0\InterfacesDal.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Interfaces\obj\Debug\netstandard2.0\InterfacesDal.pdb
+>>>>>>> main

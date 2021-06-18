@@ -1,7 +1,11 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+<<<<<<< HEAD
 using Logic.Interfaces;
+=======
+using Logic.Interfaces;
+>>>>>>> main
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +47,7 @@ namespace Logic
         public IngameAccount(IIngameAccountDal ingameAccountDal)
         {
             IngameAccountDAL = ingameAccountDal;
+<<<<<<< HEAD
         }
 
         //Begin van de Methodes aanroepen
@@ -51,5 +56,15 @@ namespace Logic
             throw new NotImplementedException();
         }
         //hier mogen ook de goal collection bij komen zodat die weg kan.
+=======
+        }
+
+        //Begin van de Methodes aanroepen
+        public void UpdateIngameAccount(IIngameAccount ingameAccount)
+        {
+            throw new NotImplementedException();
+        }
+        //hier mogen ook de goal collection bij komen zodat die weg kan.
+>>>>>>> main
     }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "jByFY/AS2pa/TBS0nl68APAm8nt8j/IhXvSD3uU10by3DtjeB37SbRRcVYFar0pa5uezYU3kb8nR5qItT25LwQ==",
@@ -8,4 +9,16 @@
     "C:\\Users\\jaatj\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "jByFY/AS2pa/TBS0nl68APAm8nt8j/IhXvSD3uU10by3DtjeB37SbRRcVYFar0pa5uezYU3kb8nR5qItT25LwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\DIprobeersel\\LogicInterfaces\\LogicInterfaces.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaatj\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jaatj\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+>>>>>>> main
 }

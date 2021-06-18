@@ -7,6 +7,11 @@
         public string Password { get; }
         public string Email { get; }
 
+<<<<<<< HEAD
         IUser UpdateUser(int id,string email, string password, string name);
+=======
+        IUser SignIn(string email, string password);
+        IUser UpdateUser(string email, string password, string name);
+>>>>>>> main
     }
 }

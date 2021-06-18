@@ -20,11 +20,21 @@ namespace Dal.Context
             {
                 using (SqlConnection connection = DataConnection.GetConnection())
                 {
+                    //nog een goal aanmaken koppelen accounts
+                    int Accid = 1;
+
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
+<<<<<<< HEAD
                     command.CommandText = "INSERT INTO [Goal] (IngameAccountID, Title, Item, Description, Status, Kind) VALUES (@IngameAccountID, @Title, @Item, @Description, @Status, @Kind)";
                     command.Parameters.AddWithValue("@IngameAccountID", goal.AccountId);
                     command.Parameters.AddWithValue("@Item", goal.Item);
+=======
+                    command.CommandText = "INSERT INTO [Goal] (Title, Level, Description, IngameAccountID, Kind) VALUES (@Title, @Level, @Description, @AccId, @Kind)";
+                    command.Parameters.AddWithValue("@Title", goal.Title);
+                    command.Parameters.AddWithValue("@AccId", Accid);
+                    command.Parameters.AddWithValue("@Level", goal.Level);
+>>>>>>> main
                     command.Parameters.AddWithValue("@Description", goal.Description);
                     command.Parameters.AddWithValue("@Status", "NotStarted");
                     command.Parameters.AddWithValue("@Kind", goal.Kind);

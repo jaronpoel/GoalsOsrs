@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dal.Context
 {
-    public interface IIngameAccountCollection
+    public interface IIngameAccountCollectionDal
     {
         void AddIngameAccount(IngameAccountDTO ingameAccount);
         List<IngameAccountDTO> GetAllIngameAccounts();

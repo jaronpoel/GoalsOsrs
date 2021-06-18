@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
@@ -29,3 +30,36 @@ Global
 		SolutionGuid = {925359D6-A9E1-4E4D-84C6-5ABE9418E2D0}
 	EndGlobalSection
 EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircusTrain", "CircusTrain\CircusTrain.csproj", "{3396DBC0-D543-4237-9204-CA88B9EAE04E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unittesten", "Unittesten\Unittesten.csproj", "{6B807F2F-40D0-4940-AC7F-1FE2A7747F47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3396DBC0-D543-4237-9204-CA88B9EAE04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3396DBC0-D543-4237-9204-CA88B9EAE04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3396DBC0-D543-4237-9204-CA88B9EAE04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3396DBC0-D543-4237-9204-CA88B9EAE04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B807F2F-40D0-4940-AC7F-1FE2A7747F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B807F2F-40D0-4940-AC7F-1FE2A7747F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B807F2F-40D0-4940-AC7F-1FE2A7747F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B807F2F-40D0-4940-AC7F-1FE2A7747F47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {925359D6-A9E1-4E4D-84C6-5ABE9418E2D0}
+	EndGlobalSection
+EndGlobal
+>>>>>>> main

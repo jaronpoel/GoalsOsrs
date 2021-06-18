@@ -73,7 +73,17 @@ namespace Dal.Context
                 UserDTO user = new UserDTO();
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
+<<<<<<< HEAD
                     while (reader.Read())
+=======
+                    conn.Open();
+                    string query = "SELECT * From [User] WHERE Id=@id";
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                    UserDTO user = new UserDTO();
+                    using (SqlDataReader reader = command.ExecuteReader())
+>>>>>>> main
                     {
                         user.Id = (int)reader["Id"];
                         user.Name = (string)reader["Name"];

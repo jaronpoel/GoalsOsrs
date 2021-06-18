@@ -2,7 +2,7 @@
 
 namespace Dal.Context
 {
-    public interface IIngameAccount
+    public interface IIngameAccountDal
     {
         void UpdateIngameAccount(IngameAccountDTO ingameAccount);
     }

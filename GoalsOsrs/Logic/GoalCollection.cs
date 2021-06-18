@@ -1,7 +1,11 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+<<<<<<< HEAD
 using Logic.Interfaces;
+=======
+using Logic.Interfaces;
+>>>>>>> main
 using System;
 using System.Collections.Generic;
 using System.Linq;

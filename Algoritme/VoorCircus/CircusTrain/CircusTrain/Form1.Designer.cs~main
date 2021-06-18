@@ -1,6 +1,6 @@
 ﻿namespace CircusTrain
 {
-    partial class Train
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.

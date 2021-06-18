@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Factory.deps.json
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Factory.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Factory.pdb
@@ -12,3 +13,19 @@ C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.csproj.CopyComplete
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.pdb
+=======
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Factory.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Factory.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Factory.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Dal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Interfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Dal.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\bin\Debug\netstandard2.0\Interfaces.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.csproj.CopyComplete
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Factory\obj\Debug\netstandard2.0\Factory.pdb
+>>>>>>> main

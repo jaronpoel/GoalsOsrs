@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\DatabaseOsrs.mdf
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\DatabaseOsrs_log.ldf
 C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\FactoryLogic.deps.json
@@ -94,3 +95,29 @@ G:\GoalsOsrs-main\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.c
 G:\GoalsOsrs-main\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.csproj.CopyComplete
 G:\GoalsOsrs-main\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.dll
 G:\GoalsOsrs-main\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.pdb
+=======
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\DatabaseOsrs.mdf
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\DatabaseOsrs_log.ldf
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\FactoryLogic.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\FactoryLogic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\FactoryLogic.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Dal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Exceptions.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Factory.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Interfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\InterfacesLogic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Logic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Dal.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\InterfacesLogic.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Logic.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Exceptions.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Factory.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\bin\Debug\netstandard2.0\Interfaces.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.csproj.CopyComplete
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\FactoryLogic\obj\Debug\netstandard2.0\FactoryLogic.pdb
+>>>>>>> main

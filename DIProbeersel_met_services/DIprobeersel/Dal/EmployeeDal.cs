@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace Dal
@@ -6,3 +7,13 @@ namespace Dal
     {
     }
 }
+=======
+﻿using System;
+
+namespace Dal
+{
+    public class EmployeeDal : IEmployeeDal
+    {
+    }
+}
+>>>>>>> main

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Dal.Context
 {
-    public interface IGoalCollection
+    public interface IGoalCollectionDal
     {
         void AddGoal(GoalDTO goal);
         void DeleteGoal(int id);
         GoalDTO GetByIDGoals(int id);
-        List<GoalDTO> GetAllGoals();
+        List<GoalDTO> GetAllGoalsByIngameAccount(int AccId);
     }
 }

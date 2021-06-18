@@ -1,7 +1,11 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+<<<<<<< HEAD
 using Logic.Interfaces;
+=======
+using Logic.Interfaces;
+>>>>>>> main
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +18,10 @@ namespace Logic
     {
         //Factory aanroepen
         private readonly IIngameAccountCollectionDal IngameAccountCollectionDAL;
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
         public IngameAccountCollection(IIngameAccountCollectionDal ingameAccountCollectionDal)
         {
             IngameAccountCollectionDAL = ingameAccountCollectionDal;
@@ -37,6 +44,7 @@ namespace Logic
                 IngameAccounts.Add(new IngameAccount(IngameAccountDTO.Id, IngameAccountDTO.Username, IngameAccountDTO.Type));
             }
             return IngameAccounts;
+<<<<<<< HEAD
         }
 
         public IIngameAccount GetIngameAccountByID(int id)
@@ -50,5 +58,15 @@ namespace Logic
             IngameAccount ingameAccount = new IngameAccount(ingameDTO.Id, ingameDTO.Username, ingameDTO.Type, stats);
             return ingameAccount;
         }
+=======
+        }
+
+        public IIngameAccount GetIngameAccountByID(int id)
+        {
+            IngameAccountDTO ingameDTO = IngameAccountCollectionDAL.GetByIDIngameAccount(id);
+            IngameAccount ingameAccount = new IngameAccount(ingameDTO.Id, ingameDTO.Username, ingameDTO.Type);
+            return ingameAccount;
+        }
+>>>>>>> main
     }
 }

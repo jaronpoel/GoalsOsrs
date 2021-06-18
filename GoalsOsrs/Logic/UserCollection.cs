@@ -1,7 +1,11 @@
 ﻿using Dal.Context;
 using Factory;
+<<<<<<< HEAD
 using Interfaces.DTO;
 using Logic.Interfaces;
+=======
+using Logic.Interfaces;
+>>>>>>> main
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +21,7 @@ namespace Logic
         public UserCollection(IUserCollectionDal userCollectionDal)
         {
             UserDAL = userCollectionDal;
+<<<<<<< HEAD
         }
 
         //Begin van de Methodes aanroepen
@@ -59,5 +64,26 @@ namespace Logic
             User user = new User(name, password, email);
             return user;
         }
+=======
+        }
+
+        //Begin van de Methodes aanroepen
+        public void AddUser(string name, string password, string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteUser(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IUser GetUserByID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        //sign in en registeren hier
+>>>>>>> main
     }
 }

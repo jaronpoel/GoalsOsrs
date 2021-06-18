@@ -99,6 +99,7 @@ namespace Dal.Context
                     conn.Open();
                     string queryStats = "SELECT * FROM StatForIngameAccount INNER JOIN Stat ON StatForIngameAccount.StatID = Stat.Id Where AccountID = @id";
                     string query = "SELECT * From IngameAccount WHERE Id=@id";
+<<<<<<< HEAD
 
                     SqlCommand commandStat = new SqlCommand(queryStats, conn);
                     commandStat.Parameters.AddWithValue("@id", id);
@@ -119,6 +120,12 @@ namespace Dal.Context
                         }
                     }
 
+=======
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                    IngameAccountDTO ingameAccount = new IngameAccountDTO();
+>>>>>>> main
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())

@@ -12,11 +12,11 @@ using CircusTrain.classes;
 
 namespace CircusTrain
 {
-    public partial class Train : Form
+    public partial class Form1 : Form
     {
         private List<Animal> Animals { get; } = new List<Animal>();
 
-        public Train()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -36,7 +36,7 @@ namespace CircusTrain
 
         private void DivdeAnimalsBTN_Click(object sender, EventArgs e)
         {
-            classes.Train train = new classes.Train();
+            Train train = new Train();
             var divdeResult = train.PlaceAnimals(Animals);
         }
     }

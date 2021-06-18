@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
@@ -5,4 +6,13 @@
       "C:\\Users\\jaatj\\.nuget\\packages"
     ]
   }
+=======
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jaatj\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jaatj\\.nuget\\packages"
+    ]
+  }
+>>>>>>> main
 }

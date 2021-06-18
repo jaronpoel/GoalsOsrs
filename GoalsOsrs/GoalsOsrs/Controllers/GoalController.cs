@@ -8,9 +8,15 @@ using Microsoft.Extensions.Logging;
 using GoalsOsrs.Models;
 using Exceptions.Goal;
 using Logic;
+<<<<<<< HEAD
 using Logic.Interfaces;
 using FactoryLogic;
 
+=======
+using Logic.Interfaces;
+using FactoryLogic;
+
+>>>>>>> main
 namespace GoalsOsrs.Controllers
 {
     public class GoalController : Controller
@@ -22,7 +28,10 @@ namespace GoalsOsrs.Controllers
         {
             AllGoalsViewModel ViewModel = new AllGoalsViewModel();
             ViewModel.ListOfGoals = GoalCollection.GetAllGoalsByIngameAccount(AccId);
+<<<<<<< HEAD
             ViewBag.AccountId = AccId;
+=======
+>>>>>>> main
             return View(ViewModel);
         }
 

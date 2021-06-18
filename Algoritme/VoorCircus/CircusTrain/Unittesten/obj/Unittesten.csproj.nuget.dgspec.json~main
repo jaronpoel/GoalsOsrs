@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Algoritme/VoorCircus/CircusTrain/Tests/obj/Tests.csproj.nuget.dgspec.json
 {
   "format": 1,
   "restore": {
@@ -96,4 +97,93 @@
       }
     }
   }
+=======
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\Unittesten\\Unittesten.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\CircusTrain\\CircusTrain.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\CircusTrain\\CircusTrain.csproj",
+        "projectName": "CircusTrain",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\CircusTrain\\CircusTrain.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\Unittesten\\Unittesten.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\Unittesten\\Unittesten.csproj",
+        "projectName": "Unittesten",
+        "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\Unittesten\\Unittesten.csproj",
+        "packagesPath": "C:\\Users\\jaatj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\Unittesten\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jaatj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\CircusTrain\\CircusTrain.csproj": {
+                "projectPath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\CircusTrain\\CircusTrain\\CircusTrain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+>>>>>>> main:Algoritme/VoorCircus/CircusTrain/Unittesten/obj/Unittesten.csproj.nuget.dgspec.json
 }

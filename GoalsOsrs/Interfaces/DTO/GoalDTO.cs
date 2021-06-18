@@ -9,7 +9,11 @@ namespace Interfaces.DTO
     public class GoalDTO
     {
         public int Id { get; set; }
+<<<<<<< HEAD
         public int AccountId { get; set; }
+=======
+        public int AccId { get; }
+>>>>>>> main
         public string Title { get; set; }
         public string Item { get; set; }
         public string Description { get; set; }

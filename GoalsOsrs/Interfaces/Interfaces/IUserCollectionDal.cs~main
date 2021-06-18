@@ -2,7 +2,7 @@
 
 namespace Dal.Context
 {
-    public interface IUserCollection
+    public interface IUserCollectionDal
     {
         void AddUser(string name, string password, string email);
         void DeleteUser(int id);

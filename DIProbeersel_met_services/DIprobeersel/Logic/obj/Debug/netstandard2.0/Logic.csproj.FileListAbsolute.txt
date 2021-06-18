@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\Logic.deps.json
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\Logic.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\Logic.pdb
@@ -12,3 +13,19 @@ C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\L
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.pdb
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\InterfacesDal.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\InterfacesDal.pdb
+=======
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\Logic.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\Logic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\Logic.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\LogicInterfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\LogicInterfaces.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\obj\Debug\netstandard2.0\Logic.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\InterfacesDal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Logic\bin\Debug\netstandard2.0\InterfacesDal.pdb
+>>>>>>> main

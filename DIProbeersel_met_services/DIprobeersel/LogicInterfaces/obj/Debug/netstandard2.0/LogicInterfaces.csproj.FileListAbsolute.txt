@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\bin\Debug\netstandard2.0\LogicInterfaces.deps.json
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\bin\Debug\netstandard2.0\LogicInterfaces.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\bin\Debug\netstandard2.0\LogicInterfaces.pdb
@@ -7,3 +8,14 @@ C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netsta
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.csproj.CoreCompileInputs.cache
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.dll
 C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.pdb
+=======
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\bin\Debug\netstandard2.0\LogicInterfaces.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\bin\Debug\netstandard2.0\LogicInterfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\bin\Debug\netstandard2.0\LogicInterfaces.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\LogicInterfaces\obj\Debug\netstandard2.0\LogicInterfaces.pdb
+>>>>>>> main

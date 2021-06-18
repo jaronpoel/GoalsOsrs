@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 ﻿using Logic;
 using Logic.Interfaces;
 using Dal.Context;
+=======
+﻿using Logic;
+using Logic.Interfaces;
+using Dal.Context;
+>>>>>>> main
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "KpsfJuOdm3jtk0zcn7f0foqNCOuUTAtI7tLCOGp/PnQ4+D6iiTgpdZBZm1hwnrTJ96aoy1vNP+DWDfVlsGKpFQ==",
@@ -8,4 +9,16 @@
     "C:\\Users\\jaatj\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "KpsfJuOdm3jtk0zcn7f0foqNCOuUTAtI7tLCOGp/PnQ4+D6iiTgpdZBZm1hwnrTJ96aoy1vNP+DWDfVlsGKpFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\DIprobeersel\\FactoryLogic\\FactoryLogic - Word service.AddScoped.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaatj\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jaatj\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+>>>>>>> main
 }

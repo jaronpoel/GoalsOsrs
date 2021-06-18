@@ -12,9 +12,15 @@ namespace CircusTrain.classes
         public List<Wagon> Wagons { get; set; } = new List<Wagon>();
         public List<Wagon> ClosedWagons { get; set; } = new List<Wagon>();
 
+<<<<<<< HEAD
         public Wagon WagonObj = new Wagon();
 
         public int WagonSpace = 0;
+=======
+        public Wagon WagonObj = new Wagon();
+
+        public int WagonSpace = 0;
+>>>>>>> main
         public int J = 0;
 
         public bool WagonFull = false;

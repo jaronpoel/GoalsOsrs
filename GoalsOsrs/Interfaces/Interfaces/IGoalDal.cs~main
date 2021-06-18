@@ -2,7 +2,7 @@
 
 namespace Dal.Context
 {
-    public interface IGoal
+    public interface IGoalDal
     {
         void UpdateGoal(GoalDTO goal);
     }

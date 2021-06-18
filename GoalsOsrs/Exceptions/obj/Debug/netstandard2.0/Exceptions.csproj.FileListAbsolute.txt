@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.deps.json
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.dll
 C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.pdb
@@ -43,3 +44,23 @@ G:\GoalsOsrs-main\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.Assem
 G:\GoalsOsrs-main\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.csproj.CoreCompileInputs.cache
 G:\GoalsOsrs-main\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.dll
 G:\GoalsOsrs-main\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.pdb
+=======
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.deps.json
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.csprojAssemblyReference.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.AssemblyInfoInputs.cache
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.AssemblyInfo.cs
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.dll
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.pdb
+C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\bin\Debug\netstandard2.0\Exceptions.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.dll
+C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs\GoalsOsrs\Exceptions\obj\Debug\netstandard2.0\Exceptions.pdb
+>>>>>>> main
