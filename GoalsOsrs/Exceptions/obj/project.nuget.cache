@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "omRXEIGaYCYFgYZlgkEDyvnuOijEXWUiZXSaRsBCoWM8p+4pTdosc9vDSL1BBCs3VCJu1YymsDSm0TGuTgC77Q==",
+  "dgSpecHash": "aEtRR7K+gSJrzseS140I6cNnKRdqhJ8A1AMI0J5F7keQyEGWp2yl87Y/B/r2I6Zo0nGolzBca0cyVm1Rokjvjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
+  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jaron\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Jaron\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

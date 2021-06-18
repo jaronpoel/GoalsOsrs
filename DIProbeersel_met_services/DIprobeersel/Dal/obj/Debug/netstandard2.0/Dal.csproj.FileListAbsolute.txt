@@ -1,0 +1,12 @@
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\bin\Debug\netstandard2.0\Dal.deps.json
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\bin\Debug\netstandard2.0\Dal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\bin\Debug\netstandard2.0\Dal.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.csprojAssemblyReference.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.AssemblyInfoInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.AssemblyInfo.cs
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.csproj.CoreCompileInputs.cache
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.csproj.CopyComplete
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\obj\Debug\netstandard2.0\Dal.pdb
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\bin\Debug\netstandard2.0\InterfacesDal.dll
+C:\Users\jaatj\OneDrive\Bureaublad\DIprobeersel\Dal\bin\Debug\netstandard2.0\InterfacesDal.pdb

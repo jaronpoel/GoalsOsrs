@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jaron\\Desktop\\CircusTrain\\Tests\\Tests.csproj": {}
+    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jaron\\Desktop\\CircusTrain\\CircusTrain\\CircusTrain.csproj": {
+    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\CircusTrain\\CircusTrain.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\CircusTrain\\CircusTrain.csproj",
+        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\CircusTrain\\CircusTrain.csproj",
         "projectName": "CircusTrain",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\CircusTrain\\CircusTrain.csproj"
+        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\CircusTrain\\CircusTrain.csproj"
       },
       "frameworks": {
         "net461": {}
       }
     },
-    "C:\\Users\\Jaron\\Desktop\\CircusTrain\\Tests\\Tests.csproj": {
+    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\Tests\\Tests.csproj",
+        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\Jaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\Tests\\obj\\",
+        "outputPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,8 +42,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Jaron\\Desktop\\CircusTrain\\CircusTrain\\CircusTrain.csproj": {
-                "projectPath": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\CircusTrain\\CircusTrain.csproj"
+              "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\CircusTrain\\CircusTrain.csproj": {
+                "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\CircusTrain\\CircusTrain.csproj"
               }
             }
           }

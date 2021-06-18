@@ -1,0 +1,37 @@
+﻿@model GoalsOsrs.Models.SignUpViewModel
+@{
+    ViewData["Title"] = "Account";
+}
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Account</h4>
+                <hr />
+
+
+                <form method="post" asp-action="UpdateFullUser" asp-route-id="@ViewBag.User.Id">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" value="@ViewBag.User.Email"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control" value="@ViewBag.User.Name"/>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" value="@ViewBag.User.Password"/>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <button type="submit">Change account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

@@ -11,21 +11,29 @@
     <div class="goalsdiv">
         <div id="left">
             <h3>Done</h3>
+            @foreach (Goal goal in Model.ListOfGoals.Where(g => g.Status == "Done"))
+            {
+                <a asp-action="SingleGoal" asp-route-id="@goal.Id" asp-controller="Goal"><div class="goals"><p>@goal.Title</p></div></a>            
+            }
         </div>
 
         <div id="middle">
-            <h3>Close</h3>
+            <h3>Started</h3>
+            @foreach (Goal goal in Model.ListOfGoals.Where(g => g.Status == "Started"))
+            {
+                <a asp-action="SingleGoal" asp-route-id="@goal.Id" asp-controller="Goal"><div class="goals"><p>@goal.Title</p></div></a>            
+            }
         </div>
 
         <div id="right">
-            <h3>Too Far</h3>
-            @foreach (Goal goal in Model.ListOfGoals)
+            <h3>Not started</h3>
+            @foreach (Goal goal in Model.ListOfGoals.Where(g => g.Status == "NotStarted"))
             {
                 <a asp-action="SingleGoal" asp-route-id="@goal.Id" asp-controller="Goal"><div class="goals"><p>@goal.Title</p></div></a>
             }
             </div>
     </div>
-    <form asp-action="AddGoal">
+    <form asp-action="AddGoal" asp-controller="Goal" asp-route-AccId="@ViewBag.AccountId">
         <button class="bottom-right">Make goal</button>
     </form>
 </body>

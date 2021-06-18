@@ -9,11 +9,15 @@ namespace Dal
 {
     public class DataConnection
     {
-        //Thuis
-        private static readonly string ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\DatabaseOsrs.mdf";
+        //Thuis  op git
+        //private static readonly string ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Jaron\Desktop\School\Nieuw\GoalsOsrs\GoalsOsrs\Dal\DatabaseOsrs.mdf";
 
-        //Online
-        //private static readonly string ConnectionString = "Data Source=mssql.fhict.local; Initial Catalog=dbi392219; Persist Security Info=True; User ID=dbi392219; Password=Masu1996";
+        // School 
+        //private static readonly string ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\jaatj\OneDrive\Bureaublad\GoalsOsrs-main\GoalsOsrs\Dal\DatabaseOsrs.mdf";
+
+        //Thuis niet op git
+         private static readonly string ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Jaron\Desktop\GoalsOsrs-main\GoalsOsrs\Dal\DatabaseOsrs.mdf";
+
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(ConnectionString);

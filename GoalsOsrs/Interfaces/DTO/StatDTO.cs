@@ -10,15 +10,18 @@ namespace Interfaces.DTO
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public int Value { get; set; }
 
         public StatDTO()
         {
 
         }
 
-        public StatDTO(string title)
+        public StatDTO(int id, string title, int value)
         {
             Title = title;
+            Id = id;
+            Value = value;
         }
     }
 }

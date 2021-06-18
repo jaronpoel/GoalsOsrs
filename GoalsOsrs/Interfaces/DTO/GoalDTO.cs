@@ -9,11 +9,11 @@ namespace Interfaces.DTO
     public class GoalDTO
     {
         public int Id { get; set; }
+        public int AccountId { get; set; }
         public string Title { get; set; }
         public string Item { get; set; }
-        public int Level { get; set; }
-        public int Killcount { get; set; }
         public string Description { get; set; }
+        public string Status { get; set; }
         public string Kind { get; set; }
 
         public GoalDTO()
@@ -21,12 +21,34 @@ namespace Interfaces.DTO
 
         }
 
-        public GoalDTO(string title, int level, string description, string kind)
+        public GoalDTO(int id, int accid, string title, string item, string description, string status, string kind)
+        {
+            Id = id;
+            AccountId = accid;
+            Title = title;
+            Item = item;
+            Description = description;
+            Status = status;
+            Kind = kind;
+        }
+
+        public GoalDTO(string title, string kind, string item, string description, int accid)
         {
             Title = title;
-            Level = level;
-            Description = description;
             Kind = kind;
+            Item = item;
+            Description = description;
+            AccountId = accid;
+        }
+
+        public GoalDTO(int id, string title, string kind, string item, string description, string status)
+        {
+            Id = id;
+            Title = title;
+            Kind = kind;
+            Item = item;
+            Description = description;
+            Status = status;
         }
     }
 }

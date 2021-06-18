@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class GoalSqlContext : IGoal, IGoalCollection
+    public class GoalSqlContext : IGoalDal, IGoalCollectionDal
     {
-        //as of right now alleen level haalt hij op en van AccountId = 1 (ingameaccount aan koppelen)
 
         //add
         public void AddGoal(GoalDTO goal)
@@ -23,11 +22,13 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "INSERT INTO [Goal] (Title, Level, Description, IngameAccountID, Kind) VALUES (@Title, @Level, @Description, 1, @Kind)";
-                    command.Parameters.AddWithValue("@Title", goal.Title);
-                    command.Parameters.AddWithValue("@Level", goal.Level);
+                    command.CommandText = "INSERT INTO [Goal] (IngameAccountID, Title, Item, Description, Status, Kind) VALUES (@IngameAccountID, @Title, @Item, @Description, @Status, @Kind)";
+                    command.Parameters.AddWithValue("@IngameAccountID", goal.AccountId);
+                    command.Parameters.AddWithValue("@Item", goal.Item);
                     command.Parameters.AddWithValue("@Description", goal.Description);
+                    command.Parameters.AddWithValue("@Status", "NotStarted");
                     command.Parameters.AddWithValue("@Kind", goal.Kind);
+                    command.Parameters.AddWithValue("@Title", goal.Title);
                     command.ExecuteNonQuery();
                 }
             }
@@ -46,11 +47,13 @@ namespace Dal.Context
                 {
                     connection.Open();
                     SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "UPDATE [Goal] SET (values) WHERE Id = @Id";
-                    command.Parameters.AddWithValue("@Title", goal.Title);
-                    command.Parameters.AddWithValue("@Level", goal.Level);
+                    command.CommandText = "UPDATE [Goal] SET Item = @Item, Description = @Description, Kind = @Kind, Status = @Status, Title = @Title WHERE Id = @Id";
+                    command.Parameters.AddWithValue("@Id", goal.Id);
+                    command.Parameters.AddWithValue("@Item", goal.Item);
                     command.Parameters.AddWithValue("@Description", goal.Description);
                     command.Parameters.AddWithValue("@Kind", goal.Kind);
+                    command.Parameters.AddWithValue("@Status", goal.Status);
+                    command.Parameters.AddWithValue("@Title", goal.Title);
                     command.ExecuteNonQuery();
                 }
             }
@@ -81,18 +84,19 @@ namespace Dal.Context
         }
 
         //getAll
-        public List<GoalDTO> GetAllGoals()
+        public List<GoalDTO> GetAllGoalsByIngameAccount(int AccId)
         {
             try
             {
                 using (SqlConnection conn = DataConnection.GetConnection())
                 {
                     conn.Open();
-                    string query = "SELECT * FROM Goal WHERE IngameAccountID = 1";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.ExecuteNonQuery();
+                    string query = "SELECT * FROM Goal WHERE IngameAccountID = @id";
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@Id", AccId);
+                    command.ExecuteNonQuery();
                     DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
+                    dt.Load(command.ExecuteReader());
 
                     List<GoalDTO> AllGoals = new List<GoalDTO>();
                     foreach (DataRow dr in dt.Rows)
@@ -101,10 +105,12 @@ namespace Dal.Context
 
                         int.TryParse(dr[0].ToString(), out int id);
                         goal.Id = id;
-                        goal.Title = dr[1].ToString();
-                        int.TryParse(dr[3].ToString(), out int level);
-                        goal.Level = level;
-                        goal.Description = dr[5].ToString();
+                        int.TryParse(dr[1].ToString(), out int Accountid);
+                        goal.AccountId = Accountid;
+                        goal.Title = dr[2].ToString();
+                        goal.Item = dr[3].ToString();
+                        goal.Description = dr[4].ToString();
+                        goal.Status  = dr[5].ToString();
                         goal.Kind = dr[6].ToString();
 
                         AllGoals.Add(goal);
@@ -118,7 +124,7 @@ namespace Dal.Context
             }
         }
 
-        //getById
+        //getById                                                                                                                          
         public GoalDTO GetByIDGoals(int id)
         {
             try
@@ -127,19 +133,19 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * From Goal WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
                     GoalDTO goal = new GoalDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
                             goal.Id = (int)reader["Id"];
                             goal.Title = (string)reader["Title"];
-                            goal.Level = (int)reader["Level"];
                             goal.Description = (string)reader["Description"];
                             goal.Kind = (string)reader["Kind"];
+                            goal.Item = (string)reader["Item"];
                         }
                     }
                     return (goal);

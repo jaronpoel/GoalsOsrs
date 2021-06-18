@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <form asp-action="UpdateFullGoal" asp-route-id="@ViewBag.Goal.Id">
+                <form asp-action="UpdateFullGoal">
                     <h4>Change a Goal.</h4>
                     <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>
@@ -22,10 +22,37 @@
                     </div>
 
                     <div class="form-group">
+                        <label asp-for="Kind"></label>
+                        <select asp-for="Kind" name="Kind" class="form-control">
+                            <option value="Item">Item</option>
+                        </select>
+                        <span asp-validation-for="Kind" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ValueOfKind"></label>
+                        <input asp-for="ValueOfKind" class="form-control" value=@ViewBag.Goal.Item />
+                        <span asp-validation-for="ValueOfKind" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
                         <label asp-for="Description"></label>
                         <textarea asp-for="Description" class="form-control" style="height: 425px" ; />@ViewBag.Goal.Description</textarea>
                         <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
+
+                    <div class="form-group">
+                        <label asp-for="Status"></label>
+                        <select asp-for="Status" name="Status" class="form-control">
+                            <option value="NotStarted">Not started</option>
+                            <option value="Started">Started</option>
+                            <option value="Done">Done</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    <!-- id meegeven-->
+                    <input asp-for="Id" hidden class="form-control" value="@ViewBag.Goal.Id" />
+                    <span asp-validation-for="Id" class="text-danger" hidden></span>
                     <button class="">Update</button>
                 </form>
             </div>

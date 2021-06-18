@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "W6A70YCJf0CdOwlexGD7t4Bm8hTE6gyhFQcJjBD4/ZrCoXxy9bGn+iGGu1YjFUnr4MY6GEiNt9IRjJ1zrJAQSw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jaron\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Jaron\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

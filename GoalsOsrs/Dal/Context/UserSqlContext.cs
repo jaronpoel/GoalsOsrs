@@ -9,31 +9,38 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class UserSqlContext : IUser, IUserCollection
+    public class UserSqlContext : IUserDal, IUserCollectionDal
     {
-        //add
-        public void AddUser(string name, string password, string email)
+        //signUp
+        public UserDTO SignUp(string email, string password, string name)
         {
             try
             {
-                using (SqlConnection connection = DataConnection.GetConnection())
+                using (SqlConnection conn = DataConnection.GetConnection())
                 {
-                    connection.Open();
-                    SqlCommand command = connection.CreateCommand();
-                    command.CommandText = "INSERT INTO [User] (Email, Name, Password) VALUES (@Email, @Name, @Password)";
-                    command.Parameters.AddWithValue("@Email", email);
-                    command.Parameters.AddWithValue("@Username", name);
-                    command.Parameters.AddWithValue("@Password", password);
-                    command.ExecuteNonQuery();
+                    conn.Open();
+                    string query = "IF NOT EXISTS (Select 1 from [User] WHERE Email = @Email) INSERT INTO [User](Email, Name, Password) VALUES (@Email, @Name, @Password) ELSE Throw 50011, '', 1";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Name", name);
+                        cmd.Parameters.AddWithValue("@Password", password);
+                        cmd.ExecuteNonQuery();
+
+                        UserDTO madeUser = new UserDTO(name, password, email);
+                        return madeUser;
+                    }
                 }
             }
-            catch (SqlException)
+            catch(SqlException)
             {
-                throw new SignUpFailedException("An unexpected error occured.");
+                return null;
             }
+            
         }
+
         //delete
-        public void DeleteUser(int id)
+        public bool DeleteUser(int id)
         {
             try
             {
@@ -44,81 +51,86 @@ namespace Dal.Context
                     command.CommandText = "DELETE FROM [User] WHERE @Id = id;";
                     command.Parameters.AddWithValue("@Id", id);
                     command.ExecuteNonQuery();
+                    return true;
                 }
             }
-            catch (SqlException)
+            catch
             {
-                throw new NotImplementedException();
+                return false;
             }
         }
+
         //getbyid
         public UserDTO GetUserByID(int id)
         {
-            try
+            using (SqlConnection conn = DataConnection.GetConnection())
             {
-                using (SqlConnection conn = DataConnection.GetConnection())
+                conn.Open();
+                string query = "SELECT * From [User] WHERE Id=@id";
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@id", id);
+                command.ExecuteNonQuery();
+                UserDTO user = new UserDTO();
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    conn.Open();
-                    string query = "SELECT * From [User] WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
-                    UserDTO user = new UserDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            user.Id = (int)reader["Id"];
-                            user.Name = (string)reader["Name"];
-                            user.Email = (string)reader["Email"];
-                            user.Password = (string)reader["Password"];
-                        }
+                        user.Id = (int)reader["Id"];
+                        user.Name = (string)reader["Name"];
+                        user.Email = (string)reader["Email"];
+                        user.Password = (string)reader["Password"];
                     }
-                    return (user);
+                }
+                return user;
+            }
+        }
+
+        //update
+        public UserDTO UpdateUser(int id, string name, string password, string email)
+        {
+            using (SqlConnection conn = DataConnection.GetConnection())
+            {
+                conn.Open();
+                string query = "UPDATE [User] SET Email = @Email, Name = @Name, Password = @Password WHERE Id=@Id";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Password", password);
+                    cmd.ExecuteNonQuery();
+
+                    UserDTO updatedUser = new UserDTO(id, name, password, email);
+                    return updatedUser;
                 }
             }
-            catch (SqlException)
-            {
-                throw new NotImplementedException();
-            }
         }
-        //update
-        public void UpdateUser()
-        {
-            throw new NotImplementedException();
-        }
+
         //signin
         public UserDTO SignIn(string email, string password)
         {
-            try
+            using (SqlConnection connection = DataConnection.GetConnection())
             {
-                using (SqlConnection connection = DataConnection.GetConnection())
-                {
-                    connection.Open();
-                    SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM [User] WHERE Email = @Email AND Password = @Password", connection);
-                    command.Parameters.AddWithValue("@Email", email);
-                    command.Parameters.AddWithValue("@Password", password);
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM [User] WHERE Email = @Email AND Password = @Password", connection);
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Password", password);
 
-                    if ((int)command.ExecuteScalar() == 1)
+                if ((int)command.ExecuteScalar() == 1)
+                {
+                    SqlCommand scommand = new SqlCommand("SELECT ID, Name FROM [User] WHERE Email = @Email", connection);
+                    scommand.Parameters.AddWithValue("@Email", email);
+                    SqlDataReader reader = scommand.ExecuteReader();
+                    while (reader.Read())
                     {
-                        SqlCommand scommand = new SqlCommand("SELECT ID, Name FROM [User] WHERE Email = @Email", connection);
-                        scommand.Parameters.AddWithValue("@Email", email);
-                        SqlDataReader reader = scommand.ExecuteReader();
-                        while (reader.Read())
+                        return new UserDTO()
                         {
-                            return new UserDTO()
-                            {
-                                Id = (int)reader["ID"],
-                                Name = (string)reader["Name"],
-                            };
-                        }
+                            Id = (int)reader["ID"],
+                            Name = (string)reader["Name"],
+                        };
                     }
-                    throw new AuthenticationFailedException("Incorrect username or password.");
                 }
-            }
-            catch (SqlException)
-            {
-                throw new AuthenticationFailedException("An unexpected error occured.");
+                return null;
             }
         }
     }

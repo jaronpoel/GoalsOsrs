@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class IngameAccountSqlContext : IIngameAccountCollection, IIngameAccount
+    public class IngameAccountSqlContext : IIngameAccountCollectionDal, IIngameAccountDal
     {
-
         //add
         public void AddIngameAccount(IngameAccountDTO ingameAccount)
         {
@@ -63,10 +62,10 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * FROM IngameAccount WHERE UserID = 1";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.ExecuteNonQuery();
                     DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
+                    dt.Load(command.ExecuteReader());
 
                     List<IngameAccountDTO> AllIngameAccounts = new List<IngameAccountDTO>();
                     foreach (DataRow dr in dt.Rows)
@@ -98,18 +97,36 @@ namespace Dal.Context
                 using (SqlConnection conn = DataConnection.GetConnection())
                 {
                     conn.Open();
+                    string queryStats = "SELECT * FROM StatForIngameAccount INNER JOIN Stat ON StatForIngameAccount.StatID = Stat.Id Where AccountID = @id";
                     string query = "SELECT * From IngameAccount WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+
+                    SqlCommand commandStat = new SqlCommand(queryStats, conn);
+                    commandStat.Parameters.AddWithValue("@id", id);
+                    commandStat.ExecuteNonQuery();
+
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+
                     IngameAccountDTO ingameAccount = new IngameAccountDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    List<StatDTO> stats = new List<StatDTO>();
+
+                    using(SqlDataReader reader = commandStat.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            stats.Add(new StatDTO((int)reader["Id"], (string)reader["Title"], (int)reader["Value"]));
+                        }
+                    }
+
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
                             ingameAccount.Id = (int)reader["Id"];
                             ingameAccount.Username = (string)reader["Name"];
                             ingameAccount.Type = (string)reader["Type"];
+                            ingameAccount.Stats = stats;
                         }
                     }
                     return (ingameAccount);

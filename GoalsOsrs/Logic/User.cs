@@ -1,6 +1,7 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+using Logic.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class User
+    public class User : IUser
     {
         public int Id { get; }
         public string Name { get; }
@@ -24,6 +25,13 @@ namespace Logic
             Email = email;
         }
 
+        public User(string name, string password, string email)
+        {
+            Name = name;
+            Password = password;
+            Email = email;
+        }
+
         public User(int id, string name)
         {
             Id = id;
@@ -31,24 +39,20 @@ namespace Logic
         }
 
         //Factory aanroepen
-        private readonly IUser UserDAL;
-        public User()
+        private readonly IUserDal UserDAL;
+        public User(IUserDal userDal)
         {
-            UserDAL = FactoryDal.CreateUserDal();
+            UserDAL = userDal;
         }
 
         //Begin van de Methodes aanroepen
 
-        public User SignIn(string email, string password)
+        public IUser UpdateUser(int id, string name, string password, string email)
         {
-            UserDTO userdto = UserDAL.SignIn(email, password);
-            User user = new User(userdto.Id, userdto.Name);
+            //nog aanpassen met wat ik return
+            UserDTO userdto = UserDAL.UpdateUser(id, name, password, email);
+            User user = new User(userdto.Id, userdto.Name, userdto.Password, userdto.Email);
             return user;
-        }
-
-        public User UpdateUser(string email, string password, string name)
-        {
-            throw new NotImplementedException();
         }
     }
 }

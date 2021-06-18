@@ -170,6 +170,21 @@
           "bin/placeholder/Factory.dll": {}
         }
       },
+      "FactoryLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "InterfacesLogic": "1.0.0",
+          "Logic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FactoryLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FactoryLogic.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "type": "project",
         "compile": {
@@ -179,11 +194,22 @@
           "bin/placeholder/Interfaces.dll": {}
         }
       },
+      "InterfacesLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/InterfacesLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfacesLogic.dll": {}
+        }
+      },
       "Logic/1.0.0": {
         "type": "project",
         "dependencies": {
           "Factory": "1.0.0",
-          "Interfaces": "1.0.0"
+          "Interfaces": "1.0.0",
+          "InterfacesLogic": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Logic.dll": {}
@@ -520,10 +546,20 @@
       "path": "../Factory/Factory.csproj",
       "msbuildProject": "../Factory/Factory.csproj"
     },
+    "FactoryLogic/1.0.0": {
+      "type": "project",
+      "path": "../FactoryLogic/FactoryLogic.csproj",
+      "msbuildProject": "../FactoryLogic/FactoryLogic.csproj"
+    },
     "Interfaces/1.0.0": {
       "type": "project",
       "path": "../Interfaces/Interfaces.csproj",
       "msbuildProject": "../Interfaces/Interfaces.csproj"
+    },
+    "InterfacesLogic/1.0.0": {
+      "type": "project",
+      "path": "../InterfacesLogic/InterfacesLogic.csproj",
+      "msbuildProject": "../InterfacesLogic/InterfacesLogic.csproj"
     },
     "Logic/1.0.0": {
       "type": "project",
@@ -533,6 +569,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Exceptions >= 1.0.0",
+      "FactoryLogic >= 1.0.0",
+      "InterfacesLogic >= 1.0.0",
       "Logic >= 1.0.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
@@ -545,11 +584,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+      "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
       "projectName": "GoalsOsrs",
-      "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+      "projectPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
       "packagesPath": "C:\\Users\\Jaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\obj\\",
+      "outputPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\GoalsOsrs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -570,8 +609,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj": {
-              "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Logic\\Logic.csproj"
+            "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
+              "projectPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj"
+            },
+            "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj": {
+              "projectPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\FactoryLogic\\FactoryLogic.csproj"
+            },
+            "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj": {
+              "projectPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\InterfacesLogic\\InterfacesLogic.csproj"
+            },
+            "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Logic\\Logic.csproj": {
+              "projectPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Logic\\Logic.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {}
+    "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
+    "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
+        "projectPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\Exceptions.csproj",
         "packagesPath": "C:\\Users\\Jaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\Exceptions\\obj\\",
+        "outputPath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

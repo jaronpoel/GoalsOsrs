@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H6t/dCY/YTsT1HXXiWet5aApCI7VgGW5vZrQutqoI069SbQ05YjqfVla8VFx2cYBiryOZvMcMrenmK2VCeLLBA==",
+  "dgSpecHash": "t7g4tQJFRjCIjPuxGTtbVIUxHYwjH4BTCU/4myysNgjjTeU/q7Jyo0HqHXZUYw/PnRCxRNAOe37nhTxpPOtppA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
+  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\GoalsOsrs-main\\GoalsOsrs\\GoalsOsrs\\GoalsOsrs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jaron\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Jaron\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

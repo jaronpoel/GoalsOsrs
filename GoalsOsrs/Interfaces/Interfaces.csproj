@@ -48,12 +48,13 @@
     <Compile Include="DTO\IngameAccountDTO.cs" />
     <Compile Include="DTO\GoalDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
-    <Compile Include="Interfaces\IGoalCollection.cs" />
-    <Compile Include="Interfaces\IGoal.cs" />
-    <Compile Include="Interfaces\IIngameAccount.cs" />
-    <Compile Include="Interfaces\IIngameAccountCollection.cs" />
-    <Compile Include="Interfaces\IUser.cs" />
-    <Compile Include="Interfaces\IUserCollection.cs" />
+    <Compile Include="Interfaces\IGoalCollectionDal.cs" />
+    <Compile Include="Interfaces\IStatDal.cs" />
+    <Compile Include="Interfaces\IGoalDal.cs" />
+    <Compile Include="Interfaces\IIngameAccountDal.cs" />
+    <Compile Include="Interfaces\IIngameAccountCollectionDal.cs" />
+    <Compile Include="Interfaces\IUserDal.cs" />
+    <Compile Include="Interfaces\IUserCollectionDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

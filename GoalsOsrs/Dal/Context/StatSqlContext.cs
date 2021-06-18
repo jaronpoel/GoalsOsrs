@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Context
 {
-    public class StatSqlContext
+    public class StatSqlContext: IStatDal
     {
         //getbyid
         public StatDTO GetStatByID(int id)
@@ -20,17 +20,16 @@ namespace Dal.Context
                 {
                     conn.Open();
                     string query = "SELECT * From [Stat] WHERE Id=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
                     StatDTO stat = new StatDTO();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
                             stat.Id = (int)reader["Id"];
-                            stat.Title = (string)reader["Title"];
-                            
+                            stat.Title = (string)reader["Title"];  
                         }
                     }
                     return (stat);
@@ -41,7 +40,5 @@ namespace Dal.Context
                 throw new NotImplementedException();
             }
         }
-        //update
-
     }
 }

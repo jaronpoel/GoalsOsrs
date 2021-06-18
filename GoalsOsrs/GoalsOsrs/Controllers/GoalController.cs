@@ -8,23 +8,27 @@ using Microsoft.Extensions.Logging;
 using GoalsOsrs.Models;
 using Exceptions.Goal;
 using Logic;
+using Logic.Interfaces;
+using FactoryLogic;
 
 namespace GoalsOsrs.Controllers
 {
     public class GoalController : Controller
     {
-        private Goal Goal { get; } = new Goal();
-        private GoalCollection GoalCollection { get; } = new GoalCollection();
+        private IGoal Goal { get; } = FactoryLogicLayer.CreateGoal();
+        private IGoalCollection GoalCollection { get; } = FactoryLogicLayer.CreateGoalCollection();
 
-        public IActionResult Goals()
+        public IActionResult Goals(int AccId)
         {
             AllGoalsViewModel ViewModel = new AllGoalsViewModel();
-            ViewModel.ListOfGoals = GoalCollection.GetAllGoals();
+            ViewModel.ListOfGoals = GoalCollection.GetAllGoalsByIngameAccount(AccId);
+            ViewBag.AccountId = AccId;
             return View(ViewModel);
         }
 
-        public IActionResult AddGoal()
+        public IActionResult AddGoal(int AccId)
         {
+            ViewBag.AccountId = AccId;
             return View();
         }
 
@@ -36,7 +40,7 @@ namespace GoalsOsrs.Controllers
 
         public IActionResult UpdateGoal(int id)
         {
-            Goal goal = GoalCollection.GetByIDGoals(id);
+            IGoal goal = GoalCollection.GetByIDGoals(id);
             if (goal == null)
             {
                 return RedirectToAction("Goals", "Goal");
@@ -47,7 +51,7 @@ namespace GoalsOsrs.Controllers
 
         public IActionResult SingleGoal(int id)
         {
-            Goal goal = GoalCollection.GetByIDGoals(id);
+            IGoal goal = GoalCollection.GetByIDGoals(id);
             if (goal == null)
             {
                 return RedirectToAction("Goals", "Goal");
@@ -66,7 +70,7 @@ namespace GoalsOsrs.Controllers
 
             try
             {
-                Goal newgoal = new Goal(goal.Title, goal.Level, goal.Description, goal.Kind);
+                Goal newgoal = new Goal(goal.Title, goal.Kind, goal.ValueOfKind, goal.Description, goal.AccountId);
                 GoalCollection.AddGoal(newgoal);
                 return RedirectToAction("Goals", "Goal");
             }
@@ -80,7 +84,6 @@ namespace GoalsOsrs.Controllers
         [HttpPost]
         public IActionResult UpdateFullGoal(GoalViewModel goal)
         {
-            //klopt nog niet voor kind en level. haal ik niet op en daarom zegt de app nu dat modelstate false is.
             if (!ModelState.IsValid)
             {
                 return RedirectToAction("Index", "Home");
@@ -88,11 +91,11 @@ namespace GoalsOsrs.Controllers
 
             try
             {
-                Goal updategoal = new Goal(goal.Title, goal.Level, goal.Description, goal.Kind);
+                Goal updategoal = new Goal(goal.Id, goal.Title, goal.Kind, goal.ValueOfKind, goal.Description, goal.Status);
                 Goal.UpdateGoal(updategoal);
                 return RedirectToAction("Goals", "Goal");
             }
-            catch (AddGoalFailedException exception)
+            catch (UpdateGoalFailedException exception)
             {
                 ModelState.AddModelError("", exception.Message);
                 return RedirectToAction("Index", "Home");

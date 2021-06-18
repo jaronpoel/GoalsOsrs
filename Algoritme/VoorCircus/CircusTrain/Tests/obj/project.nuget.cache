@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q6+cWod8v7zm4r0Jy05OAVjBGXySZzqRoGORL8B9FiFPlFX+GLGcwdrfiFX5ePfw7NlhTMYcfuHNXgjglwtOWA==",
+  "dgSpecHash": "W0MrBvAqBqT9wcUBqqW7ji8NWo1Hn0lFF7Zr0YGNucYhcVLpGmNPTVNszb4tm7mxBzZJCIrRAI69Jqq8pjfjDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\CircusTrain\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\Jaron\\Desktop\\School\\Nieuw\\GoalsOsrs\\Algoritme\\VoorCircus\\CircusTrain\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jaron\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

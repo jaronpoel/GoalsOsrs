@@ -9,6 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+    <ProjectReference Include="..\FactoryLogic\FactoryLogic.csproj" />
+    <ProjectReference Include="..\InterfacesLogic\InterfacesLogic.csproj" />
     <ProjectReference Include="..\Logic\Logic.csproj" />
   </ItemGroup>
 

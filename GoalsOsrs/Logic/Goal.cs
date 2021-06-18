@@ -1,6 +1,7 @@
 ﻿using Dal.Context;
 using Factory;
 using Interfaces.DTO;
+using Logic.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,55 +10,71 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class Goal
+    public class Goal: IGoal
     {
         public int Id { get; }
+        public int AccountId { get; }
         public string Title { get; }
         public string Item { get;  }
-        public int Level { get; }
-        public int Killcount { get; }
         public string Description { get; }
+        public string Status { get; }
         public string Kind { get; }
 
-        public Goal(int id, string title, string item, int level, int killcount, string description, string kind)
+        public Goal()
+        {
+
+        }
+
+        public Goal(int id, int accid, string title, string item, string description, string status, string kind)
         {
             Id = id;
+            AccountId = accid;
             Title = title;
             Item = item;
-            Level = level;
-            Killcount = killcount;
             Description = description;
+            Status = status;
             Kind = kind;
         }
 
-        public Goal(string title, int level, string description, string kind)
+        public Goal(string title, string kind, string item, string description, int accid)
         {
             Title = title;
-            Level = level;
-            Description = description;
             Kind = kind;
+            Item = item;
+            Description = description;
+            AccountId = accid;
         }
 
-        public Goal(int id, string title, int level, string description, string kind)
+        public Goal(int id, string title, string kind, string item, string description)
         {
             Id = id;
             Title = title;
-            Level = level;
-            Description = description;
             Kind = kind;
+            Item = item;
+            Description = description;
+        }
+
+        public Goal(int id, string title, string kind, string item, string description, string status)
+        {
+            Id = id;
+            Title = title;
+            Kind = kind;
+            Item = item;
+            Description = description;
+            Status = status;
         }
 
         //Factory aanroepen
-        private readonly IGoal GoalDAL;
-        public Goal()
+        private readonly IGoalDal GoalDAL;
+        public Goal(IGoalDal goalDal)
         {
-            GoalDAL = FactoryDal.CreateGoalDal();
+            GoalDAL = goalDal;
         }
 
         //methodes
-        public void UpdateGoal(Goal goal)
+        public void UpdateGoal(IGoal goal)
         {
-            GoalDTO goalDTO = new GoalDTO(goal.Title, goal.Level, goal.Description, goal.Kind);
+            GoalDTO goalDTO = new GoalDTO(goal.Id, goal.Title, goal.Kind, goal.Item, goal.Description, goal.Status);
             GoalDAL.UpdateGoal(goalDTO);
         }
     }

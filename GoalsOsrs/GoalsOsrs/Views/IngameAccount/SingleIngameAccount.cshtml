@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Logic;
+@{
     ViewData["Title"] = "Goal";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -27,9 +28,16 @@
     <div class="col-md-12">
         <div>
             Stats of the account:
-            <!-- hoe? -->
+            @foreach (Stat stat in @ViewBag.Account.Stats)
+            {
+            <div><h1>@stat.Title</h1> <h2>@stat.Value</h2> </div>
+            }
         </div>
     </div>
+
+    <form asp-action="Goals" asp-route-AccId="@ViewBag.Account.Id" asp-controller="Goal">
+        <button class="bottom-left">Goals</button>
+    </form>
 
     <form asp-action="UpdateIngameAccount" asp-route-id="@ViewBag.Account.Id">
         <button class="bottom-right">Update</button>

@@ -12,6 +12,7 @@ namespace Interfaces.DTO
         public int Id { get; set; }
         public string Username { get; set; }
         public string Type { get; set; }
+        public List<StatDTO> Stats { get; set; }
 
         public IngameAccountDTO()
         {
@@ -19,6 +20,13 @@ namespace Interfaces.DTO
         }
         public IngameAccountDTO(string username, string type)
         {
+            Username = username;
+            Type = type;
+        }
+
+        public IngameAccountDTO(int id, string username, string type)
+        {
+            Id = id;
             Username = username;
             Type = type;
         }

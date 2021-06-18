@@ -201,12 +201,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestDal\GoalTestDal.cs" />
+    <Compile Include="TestDal\IngameAccountTestDal.cs" />
+    <Compile Include="TestDal\UserTestDal.cs" />
+    <Compile Include="UnitTests\GoalTests.cs" />
+    <Compile Include="UnitTests\IngameAccountTests.cs" />
+    <Compile Include="UnitTests\UserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{ff441bc9-466c-4f47-9448-7ebb9556463f}</Project>
+      <Name>Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfacesLogic\InterfacesLogic.csproj">
+      <Project>{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}</Project>
+      <Name>InterfacesLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{6860F8BA-06E2-4D9A-84EA-AA19C7314200}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{C3C64C62-E8F8-4EF3-B605-84521EA4A9A9}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

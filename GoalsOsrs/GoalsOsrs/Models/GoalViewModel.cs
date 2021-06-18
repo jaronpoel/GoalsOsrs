@@ -15,11 +15,19 @@ namespace GoalsOsrs.Models
 
         [Required]
         [DataType(DataType.Text)]
-        public int Level { get; set; }
+        public string ValueOfKind { get; set; }
 
         [Required]
         [DataType(DataType.Text)]
         public string Description { get; set; }
 
+        [DataType(DataType.Text)]
+        public int AccountId { get; set; }
+
+        [DataType(DataType.Text)]
+        public string Status { get; set; }
+
+        [DataType(DataType.Text)]
+        public int Id { get; set; }
     }
 }

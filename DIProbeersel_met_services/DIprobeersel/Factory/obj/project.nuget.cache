@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PObTxsDHtu7RULe2NwH0BaPkE7z3iwpy7FGIHVeBLRA/3eBw45GOJvU0K3kAHmaFl8WV028C6sh9Dx67w+krog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jaatj\\OneDrive\\Bureaublad\\DIprobeersel\\Factory\\Factory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaatj\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jaatj\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

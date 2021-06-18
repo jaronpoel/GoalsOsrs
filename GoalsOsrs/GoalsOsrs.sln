@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{71622F82-49F5-45BC-BCDB-204125624318}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryLogic", "FactoryLogic\FactoryLogic.csproj", "{72DB4550-5C17-499F-AFBC-318F9A4CED45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesLogic", "InterfacesLogic\InterfacesLogic.csproj", "{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{71622F82-49F5-45BC-BCDB-204125624318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71622F82-49F5-45BC-BCDB-204125624318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71622F82-49F5-45BC-BCDB-204125624318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DB4550-5C17-499F-AFBC-318F9A4CED45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DB4550-5C17-499F-AFBC-318F9A4CED45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DB4550-5C17-499F-AFBC-318F9A4CED45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DB4550-5C17-499F-AFBC-318F9A4CED45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CE20A3-F3DE-41EB-B373-C43ABD4FDE09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
